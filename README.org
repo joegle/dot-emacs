@@ -1,0 +1,16 @@
+#+TITLE: Joegle - dot-emacs
+
+* Todo 
+  + [ ] Init
+  + [ ] MELPA mgmt
+  + [ ] Use init.org?
+    + [[https://github.com/larstvei/dot-emacs][larstvei's setup]]
+    + [[http://emacs.stackexchange.com/questions/3143/can-i-use-org-mode-to-structure-my-emacs-or-other-el-configuration-file][Can I use org-mode to structure my .emacs or other .el configuration file?]] - StackOverflow
+
+* Setup guide
+  + Clone
+    : git clone https://github.com/joegle/dot-emacs.git
+  + Backup current
+    : mv ~/.emacs.d ~/.emacs.d-bak
+  + Import config
+    : mv dot-emacs ~/.emacs.d
