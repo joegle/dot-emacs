@@ -6,6 +6,8 @@
   + [ ] Use init.org?
     + [[https://github.com/larstvei/dot-emacs][larstvei's setup]]
     + [[http://emacs.stackexchange.com/questions/3143/can-i-use-org-mode-to-structure-my-emacs-or-other-el-configuration-file][Can I use org-mode to structure my .emacs or other .el configuration file?]] - StackOverflow
+  + [ ] Convert
+    + [[https://github.com/anmonteiro/dotfiles/blob/811f2ab5298da62e21faecbb521d844e42556fe3/.emacs.d/init.el][anmonteiro init.el]]
 
 * Setup guide
   + Clone
