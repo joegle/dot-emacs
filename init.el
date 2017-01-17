@@ -3,63 +3,55 @@
 ;disable auto save
 (setq auto-save-default nil)
 
+;; Define package repositories
 (require 'package)
-
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.org/packages/"))
+	     '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives
+	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
-(add-to-list 'load-path "~/.emacs.d/elpa/neotree-20161028.2314/")
-(add-to-list 'load-path "~/.emacs.d/elpa/org-tree-slide-20160513.2325/")
-(add-to-list 'load-path "~/.emacs.d/downloads/")
+;; Load and activate emacs packages. Do this first so that the
+;; packages are loaded before you start trying to modify them.
+;; This also sets the load path.
+(package-initialize)
 
-(require 'neotree)
-(global-set-key [f5] 'neotree-toggle)
 
-(require 'org-tree-slide)
-(when (require 'org-tree-slide nil t)
-  (global-set-key (kbd "<f8>") 'org-tree-slide-mode)
-  (global-set-key (kbd "S-<f8>") 'org-tree-slide-skip-done-toggle)
-  (define-key org-tree-slide-mode-map (kbd "<f9>")
-    'org-tree-slide-move-previous-tree)
-  (define-key org-tree-slide-mode-map (kbd "<f10>")
-    'org-tree-slide-move-next-tree)
-  (define-key org-tree-slide-mode-map (kbd "<f11>")
-    'org-tree-slide-content)
-  (setq org-tree-slide-skip-outline-level 4)
-  (org-tree-slide-narrowing-control-profile)
-  (setq org-tree-slide-skip-done nil))
+;; Download the ELPA archive description if needed.
+;; This informs Emacs about the latest versions of all packages, and
+;; makes them available for download.
+(when (not package-archive-contents)
+  (package-refresh-contents))
 
-(global-visual-line-mode t)
+;; The packages you want installed. You can also install these
+;; manually with M-x package-install
+(defvar my-packages
+  '(
+    ;; Enhances M-x to allow easier execution of commands. Provides
+    ;; a filterable list of possible commands in the minibuffer
+    ;; http://www.emacswiki.org/emacs/Smex
+    smex
 
-(setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
+    ;; colorful parenthesis matching
+    rainbow-delimiters
 
-;; syntax highlight code in org-mode
-(setq org-src-fontify-natively t)
+    ;; git integration
+    magit
 
-(require 'org-daypage)
-;(setq daypage-path "~/notes/days/")
-(setq daypage-path "~/Documents/notes/")
-(define-key daypage-mode-map (kbd "<C-left>") 'daypage-prev)
-(define-key daypage-mode-map (kbd "<C-right>") 'daypage-next)
-;; (define-key daypage-mode-map (kbd "<C-up>") 'daypage-prev-week)
-;; (define-key daypage-mode-map (kbd "<C-down>") 'daypage-next-week)
-;; (define-key daypage-mode-map "\C-c." 'daypage-time-stamp)
-;;
-;; (global-set-key [f11] 'todays-daypage)
-;; (global-set-key [f10] 'yesterdays-daypage)
-(global-set-key "\C-con" 'todays-daypage)
-(global-set-key "\C-coN" 'find-daypage)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(org-level-1 ((t (:inherit outline-1 :foreground "color-39")))))
+    ;; sidebar / file explorer
+    neotree
 
-(setq org-image-actual-width nil)
+    markdown-mode
+
+    yaml-mode
+
+    smooth-scrolling
+
+    js2-mode
+
+    json-mode
+
+    go-mode))
+
+(dolist (p my-packages)
+  (when (not (package-installed-p p))
+    (package-install p)))
