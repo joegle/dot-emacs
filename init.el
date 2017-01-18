@@ -97,6 +97,7 @@
 (load "misc.el")
 
 (load "setup-neotree.el")
+(load "setup-moe.el")
 (load "setup-deft.el")
 (load "setup-daypage.el")
 (load "setup-org.el")
