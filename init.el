@@ -4,7 +4,7 @@
 ; ██╔══╝  ██║╚██╔╝██║██╔══██║██║     ╚════██║
 ; ███████╗██║ ╚═╝ ██║██║  ██║╚██████╗███████║
 ; ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝
-; ----------------------- Joegle ------------                                        
+; ------------ THE EDITOR OF A LIFETIME -----
 
 ;; Define package repositories
 (require 'package)
@@ -43,6 +43,10 @@
     ;; sidebar / file explorer
     neotree
 
+    deft
+
+    all-the-icons
+
     markdown-mode
 
     yaml-mode
@@ -80,6 +84,14 @@
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
 
-(load "setup-neotree.el")
 (load "ui.el")
+(load "editing.el")
 
+(load "misc.el")
+
+(load "setup-neotree.el")
+(load "setup-deft.el")
+
+;; Language-specific
+(load "setup-clojure.el")
+(load "setup-js.el")
