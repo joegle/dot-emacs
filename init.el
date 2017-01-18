@@ -45,6 +45,14 @@
 
     deft
 
+    cheatsheet
+    
+    auto-complete
+
+    guide-key
+
+    moe-theme
+
     all-the-icons
 
     markdown-mode
@@ -62,7 +70,6 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
-
 
 ;; Place downloaded elisp files in ~/.emacs.d/vendor. You'll then be able
 ;; to load them.
@@ -91,7 +98,11 @@
 
 (load "setup-neotree.el")
 (load "setup-deft.el")
+(load "setup-daypage.el")
+(load "setup-org.el")
+(load "setup-guide-key.el")
+(load "setup-auto-complete.el")
 
 ;; Language-specific
-(load "setup-clojure.el")
-(load "setup-js.el")
+;(load "setup-clojure.el")
+;(load "setup-js.el")

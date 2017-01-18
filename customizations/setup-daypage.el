@@ -1,3 +1,4 @@
+(require 'org-daypage)
 (setq daypage-path "~/Documents/notes/")
 
 (define-key daypage-mode-map (kbd "<C-left>") 'daypage-prev)
