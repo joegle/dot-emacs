@@ -1,7 +1,7 @@
 ;; Neotree
 ;; https://github.com/jaypei/emacs-neotree
-
 (require 'neotree)
+(require 'all-the-icons)
 
 ;; every time when the neotree window is  opened, it will try to find current
 ;; file and jump to node.
