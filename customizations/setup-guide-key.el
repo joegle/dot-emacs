@@ -85,5 +85,13 @@
 		:key "C-x C-o"
 		:description "delete blank lines")
 
+(cheatsheet-add :group 'Notes
+		:key C-con
+		:description "todays daypage")
+
+(cheatsheet-add :group 'Notes
+		:key C-coN
+		:description "find daypage")
+
 
 
