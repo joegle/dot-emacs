@@ -57,6 +57,8 @@
 
     markdown-mode
 
+    dockerfile-mode
+
     yaml-mode
 
     smooth-scrolling
