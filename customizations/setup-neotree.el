@@ -13,7 +13,7 @@
 ;; Don't allow neotree to be the only open window
 (setq-default neo-dont-be-alone t)
 
-(global-set-key [f8] 'neotree-toggle)
+(global-set-key [f2] 'neotree-toggle)
 
 (setq neo-theme (if window-system 'icons 'nerd)) ; 'classic, 'nerd, 'ascii, 'arrow
 
