@@ -6,6 +6,7 @@
 ; ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝
 ; ------------ THE EDITOR OF A LIFETIME -----
 
+
 ;; Define package repositories
 (require 'package)
 (add-to-list 'package-archives
@@ -61,6 +62,8 @@
 
     yaml-mode
 
+    expand-region
+
     smooth-scrolling
 
     js2-mode
@@ -105,7 +108,9 @@
 (load "setup-org.el")
 (load "setup-guide-key.el")
 (load "setup-auto-complete.el")
+(load "setup-expand-region.el")
 
 ;; Language-specific
 ;(load "setup-clojure.el")
 ;(load "setup-js.el")
+
