@@ -6,7 +6,6 @@
 ; ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝
 ; ------------ THE EDITOR OF A LIFETIME -----
 
-
 ;; Define package repositories
 (require 'package)
 (add-to-list 'package-archives
@@ -113,4 +112,7 @@
 ;; Language-specific
 ;(load "setup-clojure.el")
 ;(load "setup-js.el")
+
+(message "== dot-emacs git status ==")
+(message (shell-command-to-string "git status -s"))
 
