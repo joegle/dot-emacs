@@ -1,9 +1,9 @@
 (require 'ace-jump-mode)
-
-(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+(require 'bind-key)
 
 (eval-after-load "ace-jump-mode"
   '(ace-jump-mode-enable-mark-sync))
 
-(define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
+(bind-key* "C-c SPC" 'ace-jump-mode)
+(bind-key* "C-x SPC" 'ace-jump-mode-pop-mark)
 
