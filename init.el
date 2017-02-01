@@ -71,6 +71,8 @@
 
     json-mode
 
+    use-package
+
     go-mode))
 
 (dolist (p my-packages)
