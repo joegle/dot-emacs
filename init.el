@@ -67,6 +67,8 @@
 
     js2-mode
 
+    ace-jump-mode
+
     json-mode
 
     go-mode))
@@ -108,6 +110,7 @@
 (load "setup-guide-key.el")
 (load "setup-auto-complete.el")
 (load "setup-expand-region.el")
+(load "setup-ace-jump-mode.el")
 
 ;; Language-specific
 ;(load "setup-clojure.el")
