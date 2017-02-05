@@ -59,11 +59,17 @@
 
     yaml-mode
 
+    expand-region
+
     smooth-scrolling
 
     js2-mode
 
+    ace-jump-mode
+
     json-mode
+
+    use-package
 
     go-mode))
 
@@ -103,21 +109,13 @@
 (load "setup-org.el")
 (load "setup-guide-key.el")
 (load "setup-auto-complete.el")
+(load "setup-expand-region.el")
+(load "setup-ace-jump-mode.el")
 
 ;; Language-specific
 ;(load "setup-clojure.el")
 ;(load "setup-js.el")
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   (quote
-    (deft yaml-mode smooth-scrolling smex rainbow-delimiters neotree moe-theme markdown-mode magit json-mode js2-mode guide-key go-mode dockerfile-mode cheatsheet auto-complete all-the-icons))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
+(message "== dot-emacs git status ==")
+(message (shell-command-to-string "git status -s"))
+
