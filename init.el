@@ -43,6 +43,8 @@
     ;; sidebar / file explorer
     neotree
 
+    god-mode
+
     cheatsheet
     
     auto-complete
@@ -111,6 +113,7 @@
 (load "setup-auto-complete.el")
 (load "setup-expand-region.el")
 (load "setup-ace-jump-mode.el")
+(load "setup-god-mode.el")
 
 ;; Language-specific
 ;(load "setup-clojure.el")
