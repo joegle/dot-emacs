@@ -44,6 +44,8 @@
     ;; sidebar / file explorer
     neotree
 
+    god-mode
+
     cheatsheet
     
     auto-complete
@@ -51,7 +53,6 @@
     guide-key
 
     moe-theme
-
     all-the-icons
 
     markdown-mode
@@ -59,6 +60,8 @@
     dockerfile-mode
 
     yaml-mode
+
+    sublimity
 
     expand-region
 
@@ -112,6 +115,8 @@
 (load "setup-auto-complete.el")
 (load "setup-expand-region.el")
 (load "setup-ace-jump-mode.el")
+(load "setup-god-mode.el")
+(load "setup-sublimity.el")
 
 ;; Language-specific
 ;(load "setup-clojure.el")
