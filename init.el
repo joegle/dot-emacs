@@ -6,6 +6,7 @@
 ; ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝
 ; ------------ THE EDITOR OF A LIFETIME -----
 
+ 
 ;; Define package repositories
 (require 'package)
 (add-to-list 'package-archives
