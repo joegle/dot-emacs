@@ -1,3 +1,7 @@
+(require 'use-package)
+
+(bind-keys*
+ ("DEL" . backward-kill-word))
 
 (setq backup-directory-alist `(("." . "~/.saves")))
 
