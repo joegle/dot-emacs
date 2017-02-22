@@ -1,3 +1,8 @@
+# -*- mode: gitignore; -*-
 ac-comphist.dat
 elpa/
 deft/
+\#*\#
+projectile-bookmarks.eld
+.projectile
+
