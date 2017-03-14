@@ -75,8 +75,6 @@
 
     use-package
 
-    projectile
-
     go-mode))
 
 (dolist (p my-packages)
