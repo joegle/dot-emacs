@@ -6,7 +6,6 @@
 ; ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝
 ; ------------ THE EDITOR OF A LIFETIME -----
 
- 
 ;; Define package repositories
 (require 'package)
 (add-to-list 'package-archives
@@ -119,6 +118,7 @@
 (load "setup-ace-jump-mode.el")
 (load "setup-god-mode.el")
 (load "setup-sublimity.el")
+(load "setup-javascript.el")
 
 ;; Language-specific
 ;(load "setup-clojure.el")
