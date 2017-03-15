@@ -19,7 +19,6 @@
 
 (setq org-export-with-sub-superscripts nil)
 (setq org-hide-leading-stars t)
-;(setq org-blank-before-new-entry t)
 
 (org-add-link-type
  "yt"
