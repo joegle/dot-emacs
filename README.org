@@ -20,16 +20,13 @@
 
 
 * Todo
-  + [X] Init
-  + [X] MELPA mgmt
-  + [X] Use [[https://github.com/jwiegley/use-package][use-package]] macro
-  + [X] Convert
-    + [[https://github.com/anmonteiro/dotfiles/blob/811f2ab5298da62e21faecbb521d844e42556fe3/.emacs.d/init.el][anmonteiro init.el]]
   + [ ] Spaced repetition training based on [[https://www.youtube.com/watch?v%3DfCn8zs912OE][zipf's law]]
   + [ ] Spell check
   + [ ] Snippets
     + [ ] https://github.com/tuhdo/org-recipes
   + [ ] How to enable repeated Meta keypress in Mac terminal
+  + [ ] [[http://emacs.stackexchange.com/questions/14347/collapse-split-windows][split windows shortcuts]]
+  + [ ] yafold
 
 ** Someday/Maybe
    + [ ] Use init.org?
