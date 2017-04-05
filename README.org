@@ -27,6 +27,7 @@
   + [ ] How to enable repeated Meta keypress in Mac terminal
   + [ ] [[http://emacs.stackexchange.com/questions/14347/collapse-split-windows][split windows shortcuts]]
   + [ ] yafold
+  + [ ] [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html][Registers]]
 
 ** Someday/Maybe
    + [ ] Use init.org?
