@@ -30,7 +30,7 @@
   + [ ] [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html][Registers]]
   + [ ] Hide-mode line
   + [ ] [[https://github.com/camdez/goto-last-change.el][goto-last-change]]
-
+  + [ ] Ctags
 ** Someday/Maybe
    + [ ] Use init.org?
      + [[https://github.com/larstvei/dot-emacs][larstvei's setup]]
