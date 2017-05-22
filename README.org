@@ -29,7 +29,7 @@
   + [ ] yafold
   + [ ] [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html][Registers]]
   + [ ] Hide-mode line
-
+  + [ ] [[https://github.com/camdez/goto-last-change.el][goto-last-change]]
 
 ** Someday/Maybe
    + [ ] Use init.org?
