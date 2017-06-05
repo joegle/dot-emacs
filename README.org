@@ -32,6 +32,7 @@
   + [ ] Hide-mode line
   + [ ] [[https://github.com/camdez/goto-last-change.el][goto-last-change]]
   + [ ] Ctags
+  + [ ] [[https://emacs-doctor.com/tutorial-introduction-searching-emacs.html][Searching]]
 ** Someday/Maybe
    + [ ] Use init.org?
      + [[https://github.com/larstvei/dot-emacs][larstvei's setup]]
