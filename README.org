@@ -21,6 +21,7 @@
 
 * Todo
   + [ ] Spaced repetition training based on [[https://www.youtube.com/watch?v%3DfCn8zs912OE][zipf's law]]
+    + [ ] [[http://orgmode.org/worg/org-contrib/org-drill.html][set-up org-drill flash card sets]]
   + [ ] Spell check
   + [ ] Snippets
     + [ ] https://github.com/tuhdo/org-recipes
@@ -30,6 +31,9 @@
   + [ ] [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html][Registers]]
   + [ ] Hide-mode line
   + [ ] capitalize current word
+  + [ ] [[https://github.com/camdez/goto-last-change.el][goto-last-change]]
+  + [ ] Ctags
+  + [ ] [[https://emacs-doctor.com/tutorial-introduction-searching-emacs.html][Searching]]
 
 ** Someday/Maybe
    + [ ] Use init.org?
