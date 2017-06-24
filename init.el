@@ -125,5 +125,5 @@
 ;(load "setup-js.el")
 
 (message "== dot-emacs git status ==")
-(message (shell-command-to-string "git status -s"))
+(message (shell-command-to-string "git -C ~/.emacs.d/ status -s "))
 
