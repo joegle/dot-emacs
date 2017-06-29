@@ -30,6 +30,7 @@
   + [ ] yafold
   + [ ] [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html][Registers]]
   + [ ] Hide-mode line
+  + [ ] capitalize current word
   + [ ] [[https://github.com/camdez/goto-last-change.el][goto-last-change]]
   + [ ] Ctags
   + [ ] [[https://emacs-doctor.com/tutorial-introduction-searching-emacs.html][Searching]]
