@@ -119,6 +119,7 @@
 (load "setup-god-mode.el")
 (load "setup-sublimity.el")
 (load "setup-javascript.el")
+(load "setup-clojure.el")
 
 ;; Language-specific
 ;(load "setup-clojure.el")
