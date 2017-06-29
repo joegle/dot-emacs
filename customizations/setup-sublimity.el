@@ -3,7 +3,7 @@
 ;; (require 'sublimity-map)
 ;; (require 'sublimity-attractive)
 
-(sublimity-mode 1)
+(sublimity-mode nil)
 
 (setq sublimity-scroll-weight 50
       sublimity-scroll-drift-length 45)
