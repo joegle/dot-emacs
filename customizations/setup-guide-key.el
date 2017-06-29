@@ -9,6 +9,10 @@
 (global-set-key (kbd "C-c C-s") 'cheatsheet-show)
 
 ; M-x cheatsheet-show
+(cheatsheet-add-group 'A
+		      '(:key "C-x C-c" :description "leave Emacs")
+		      '(:key "C-x C-f" :description "find file"))
+
 (cheatsheet-add :group 'Common
 		:key "C-x C-c"
 		:description "leave Emacs.")
