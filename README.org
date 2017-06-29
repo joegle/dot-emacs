@@ -34,8 +34,16 @@
   + [ ] [[https://github.com/camdez/goto-last-change.el][goto-last-change]]
   + [ ] Ctags
   + [ ] [[https://emacs-doctor.com/tutorial-introduction-searching-emacs.html][Searching]]
+  + [ ] [[https://github.com/tlh/workgroups.el][Windowing package]]
+  + [ ] [[https://github.com/scallywag/org-board][org-board]] - offline webpage archive
+  + [ ] [[https://github.com/yuya373/emacs-slack][slack client]]
+  + [ ] [[https://github.com/chrisdone/god-mode/][god-mode]]
+    + activate with caps lock
+  + [ ] [[https://github.com/jonathanchu/emacs-powerline][powerline]]  
+  + [ ] [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Abbrevs.html][abrev]]
 
 ** Someday/Maybe
    + [ ] Use init.org?
      + [[https://github.com/larstvei/dot-emacs][larstvei's setup]]
      + [[http://emacs.stackexchange.com/questions/3143/can-i-use-org-mode-to-structure-my-emacs-or-other-el-configuration-file][Can I use org-mode to structure my .emacs or other .el configuration file?]] - StackOverflow
+   + [[http://chrisdone.com/posts/emacs-key-analysis][analysis of keystrokes]]
