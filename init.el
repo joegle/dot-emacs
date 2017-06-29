@@ -6,6 +6,27 @@
 ; ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝
 ; ------------ THE EDITOR OF A LIFETIME -----
 
+(defun foo ()
+  "my foo"
+  (interactive)
+  (with-temp-message "hello world"))
+
+; https://www.gnu.org/software/emacs/manual/html_node/elisp/Idle-Timers.html
+; https://stackoverflow.com/questions/2321904/elisp-how-to-save-data-in-a-file
+(defun ff ()
+  "Prompt user to enter a file name, with completion and history support."
+  (interactive)
+  (if (y-or-n-p "Would you like to review cheatsheet?")
+      (progn
+	;; code to do something here
+	(cheatsheet-show)
+	)
+    (progn
+      ;; code if user answered no.
+      )
+    )
+  )
+
 ;; Define package repositories
 (require 'package)
 (add-to-list 'package-archives
