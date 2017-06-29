@@ -43,6 +43,8 @@
     ;; sidebar / file explorer
     neotree
 
+    goto-last-change
+    
     god-mode
 
     cheatsheet

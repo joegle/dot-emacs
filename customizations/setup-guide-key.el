@@ -1,5 +1,9 @@
 (require 'guide-key)
-(setq guide-key/guide-key-sequence '("C-x r" "C-x 4"))
+(setq guide-key/guide-key-sequence
+      '("C-x r" "C-x 4"
+	(org-mode "C-c")
+	(magit "C")))
+
 (guide-key-mode 1)  ; Enable guide-key-mode
 
 (global-set-key (kbd "C-c C-s") 'cheatsheet-show)
@@ -8,6 +12,12 @@
 (cheatsheet-add :group 'Common
 		:key "C-x C-c"
 		:description "leave Emacs.")
+
+(cheatsheet-add-group 'Learn
+		      '(:key "C-x C-\\" :description "goto-last-change")
+		      '(:key "C-c C-g" :description "grep-at-cursor")
+		      '(:key "C-q" :description "close cheatsheet"))
+		      
 
 (cheatsheet-add :group 'Common
 		:key "C-x o n"
