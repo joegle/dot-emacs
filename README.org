@@ -38,6 +38,8 @@
   + [ ] [[https://github.com/yuya373/emacs-slack][slack client]]
   + [ ] [[https://github.com/chrisdone/god-mode/][god-mode]]
     + activate with caps lock
+  + [ ] [[https://github.com/jonathanchu/emacs-powerline][powerline]]  
+  + [ ] [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Abbrevs.html][abrev]]
 
 ** Someday/Maybe
    + [ ] Use init.org?

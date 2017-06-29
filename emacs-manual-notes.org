@@ -1,0 +1,12 @@
+#+TITLE: Emacs Manual Notes
+
+Here be notes from reading the emacs manual:
+
++ [[https://www.gnu.org/software/emacs/manual/emacs.html][GNU Emacs manual]]
++ Open the manual in the Info browser
+  : C-h r
+
+* Todo
+  + [ ] Read the Info guide (press h)
+  + [ ] The the Intro section (press n)
+
