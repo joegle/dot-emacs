@@ -15,3 +15,7 @@
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message "")
 
+
+; disable the toolbar with icons
+(tool-bar-mode -1)
+
