@@ -7,7 +7,6 @@
 
 (add-hook 'org-mode-hook 'guide-key/my-hook-function-for-org-mode)
 
-
 ;; Youtube embed
 (defvar yt-iframe-format
   ;; You may want to change your width and height.
@@ -19,6 +18,7 @@
 
 (setq org-export-with-sub-superscripts nil)
 (setq org-hide-leading-stars t)
+(setq org-startup-folded "nofold")
 
 (org-add-link-type
  "yt"
