@@ -1,6 +1,6 @@
 (require 'guide-key)
 (setq guide-key/guide-key-sequence
-      '("C-x r" "C-x 4"
+      '("C-x r" "C-x"
 	(org-mode "C-c")
 	(magit "C")))
 
@@ -12,6 +12,25 @@
 (cheatsheet-add-group 'A
 		      '(:key "C-x C-c" :description "leave Emacs")
 		      '(:key "C-x C-f" :description "find file"))
+
+(cheatsheet-add-group 'Editing
+		      '(:key "C-o" :description "insert line")
+		      '(:key "M-z [char]" :description "delete to char")
+		      '(:key "C-x C-f" :description "find file")
+		      '(:key "M-/" :description "delete whitespace")
+		      '(:key "M-w" :description "copy")
+		      '(:key "C-y" :description "paste")
+		      '(:key "C-x C-x" :description "swap point and mark"))
+
+(cheatsheet-add-group 'Windows
+		      '(:key "C-x ^" :description "window taller")
+		      '(:key "C-x {}" :description "window width")
+		      '(:key "C-x C-v" :description "replace buffer"))
+
+(cheatsheet-add-group 'Moving
+		      '(:key "M-m" :description "goto first char of line")
+		      '(:key "C-x C-f" :description "find file"))
+
 
 (cheatsheet-add :group 'Common
 		:key "C-x C-c"
@@ -31,21 +50,15 @@
 		:key "C-x C-b"
 		:description "list buffers")
 
-(cheatsheet-add :group 'Org
-		:key "C-c C-c 'noexport'"
-		:description "tag export disable")
+(cheatsheet-add-group 'Org
+		      '(:key "C-c C-x n/p" :description "goto next link")
+		      '(:key "C-x C-f" :description "find file")
+		      '(:key "C-c C-f/b" :description "move to same heading"))
 
-(cheatsheet-add :group 'Org
-		:key "C-c -"
-		:description "Make selection into list")
 
 (cheatsheet-add :group 'Common
 		:key "C-u M-! [CMD]"
 		:description "Insert command output")
-
-(cheatsheet-add :group 'Org
-		:key "<s [TAB]"
-		:description "Insert code block")
 
 (cheatsheet-add :group 'Common
 		:key "F10"

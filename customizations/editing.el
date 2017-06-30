@@ -8,6 +8,7 @@
 (bind-keys*
  ("M-DEL" . backward-delete-char)
  ("DEL" . backward-kill-word)
+ ("M-/" . delete-horizontal-space)
 
  ("M-j" . move-text-down)
 
