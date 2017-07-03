@@ -22,6 +22,7 @@
 * Todo
   + [ ] Spaced repetition training based on [[https://www.youtube.com/watch?v%3DfCn8zs912OE][zipf's law]]
     + [ ] [[http://orgmode.org/worg/org-contrib/org-drill.html][set-up org-drill flash card sets]]
+    + [ ] Set up random review prompt function
   + [ ] Spell check
   + [ ] Snippets
     + [ ] https://github.com/tuhdo/org-recipes
@@ -41,9 +42,11 @@
     + activate with caps lock
   + [ ] [[https://github.com/jonathanchu/emacs-powerline][powerline]]  
   + [ ] [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Abbrevs.html][abrev]]
+  + [ ] [[https://blog.aaronbieber.com/2017/03/19/organizing-notes-with-refile.html][set up org refile]]
 
 ** Someday/Maybe
    + [ ] Use init.org?
      + [[https://github.com/larstvei/dot-emacs][larstvei's setup]]
      + [[http://emacs.stackexchange.com/questions/3143/can-i-use-org-mode-to-structure-my-emacs-or-other-el-configuration-file][Can I use org-mode to structure my .emacs or other .el configuration file?]] - StackOverflow
    + [[http://chrisdone.com/posts/emacs-key-analysis][analysis of keystrokes]]
+
