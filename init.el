@@ -6,16 +6,29 @@
 ; ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝╚══════╝
 ; ------------ THE EDITOR OF A LIFETIME -----
 
-(defun foo ()
-  "my foo"
-  (interactive)
-  (with-temp-message "hello world"))
-
 ; https://www.gnu.org/software/emacs/manual/html_node/elisp/Idle-Timers.html
 ; https://stackoverflow.com/questions/2321904/elisp-how-to-save-data-in-a-file
+(setq idleWaitSecs 30)
+(setq doRepeat t)
+(random t)
+
+(require 'cl)
+
+(defun chance-n (n)
+  "Random chance out of n"
+  (eq 0 (random n)))
+
+;(setq value ())
+;(dotimes (number 1000 value)
+;  (setq value (cons (chance-n 3) value)))
+
+;(message (length (remove nil value)))
+
+
 (defun ff ()
   "Prompt user to enter a file name, with completion and history support."
   (interactive)
+  
   (if (y-or-n-p "Would you like to review cheatsheet?")
       (progn
 	;; code to do something here
@@ -26,6 +39,8 @@
       )
     )
   )
+
+(run-with-idle-timer idleWaitSecs doRepeat 'ff)
 
 ;; Define package repositories
 (require 'package)
