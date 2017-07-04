@@ -50,3 +50,8 @@
      + [[http://emacs.stackexchange.com/questions/3143/can-i-use-org-mode-to-structure-my-emacs-or-other-el-configuration-file][Can I use org-mode to structure my .emacs or other .el configuration file?]] - StackOverflow
    + [[http://chrisdone.com/posts/emacs-key-analysis][analysis of keystrokes]]
 
+* References
+  + [[https://plus.google.com/communities/114815898697665598016][Emacs group on Google+]]
+  + [[http://planet.emacsen.org/][Planet Emacsen]] - blog
+  + [[https://www.reddit.com/r/emacs/][Reddit emacs]]
+  + [[https://pinboard.in/t:emacs][Emacs tag]] on Pinboard.in 
