@@ -8,39 +8,40 @@
 
 ; https://www.gnu.org/software/emacs/manual/html_node/elisp/Idle-Timers.html
 ; https://stackoverflow.com/questions/2321904/elisp-how-to-save-data-in-a-file
-(setq idleWaitSecs 30)
 (setq doRepeat t)
 (random t)
 
-(require 'cl)
+(defgroup joegle nil
+  "Namespace for my stuff"
+  :group 'emacs)
+
+(defcustom joegle-timeout-seconds 3
+  "idle time limit to trigger prompt"
+  :type 'integer
+  :group 'joegle)
+
+(defcustom joegle-chance-factor 200
+  "set chance of prompt to be 1/n"
+  :type 'integer
+  :group 'joegle)
 
 (defun chance-n (n)
   "Random chance out of n"
   (eq 0 (random n)))
-
-;(setq value ())
-;(dotimes (number 1000 value)
-;  (setq value (cons (chance-n 3) value)))
-
-;(message (length (remove nil value)))
-
 
 (defun ff ()
   "Prompt user to enter a file name, with completion and history support."
   (interactive)
   
   (if (y-or-n-p "Would you like to review cheatsheet?")
-      (progn
-	;; code to do something here
-	(cheatsheet-show)
-	)
-    (progn
-      ;; code if user answered no.
-      )
-    )
-  )
+      (cheatsheet-show)))
 
-(run-with-idle-timer idleWaitSecs doRepeat 'ff)
+
+(defun maybe-ask-cheatsheet ()
+  (if (chance-n joegle-chance-factor)
+      (ff)))
+
+(run-with-idle-timer joegle-timeout-seconds doRepeat 'maybe-ask-cheatsheet)
 
 ;; Define package repositories
 (require 'package)
@@ -166,3 +167,15 @@
 (message "== dot-emacs git status ==")
 (message (shell-command-to-string "git -C ~/.emacs.d/ status -s "))
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(joegle-timeout-seconds 30))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
