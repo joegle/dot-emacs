@@ -11,6 +11,11 @@
 (setq doRepeat t)
 (random t)
 
+
+; Customizations file
+(setq custom-file "~/.emacs.d/customizations.el")
+(load custom-file)
+
 (defgroup joegle nil
   "Namespace for my stuff"
   :group 'emacs)
@@ -70,6 +75,8 @@
     ;; a filterable list of possible commands in the minibuffer
     ;; http://www.emacswiki.org/emacs/Smex
     smex
+
+    fill-column-indicator
 
     ;; colorful parenthesis matching
     rainbow-delimiters
@@ -167,15 +174,3 @@
 (message "== dot-emacs git status ==")
 (message (shell-command-to-string "git -C ~/.emacs.d/ status -s "))
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(joegle-timeout-seconds 30))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
