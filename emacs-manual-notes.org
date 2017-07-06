@@ -9,4 +9,30 @@ Here be notes from reading the emacs manual:
 * Todo
   + [ ] Read the Info guide (press h)
   + [ ] The the Intro section (press n)
+  + [ ] Collect sections of interest into org notes
 
+* Notes 
+
+** Menu
+
+*** TODO Intro
+
+** Important General Concepts
+
+** Funamental Editing Commands
+
+** Important Text-Changing Commands
+
+** Major Structures of Emacs
+
+** Advanced Features
+
+** Recovery from Problems
+
+*** TODO Quiting
+
+*** Lossage
+
+*** Contributing
+
+*** Service
