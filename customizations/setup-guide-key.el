@@ -39,8 +39,12 @@
 (cheatsheet-add-group 'Learn
 		      '(:key "C-x C-\\" :description "goto-last-change")
 		      '(:key "C-c C-g" :description "grep-at-cursor")
-		      '(:key "C-q" :description "close cheatsheet"))
-		      
+		      '(:key "C-q" :description "close cheatsheet")
+		      '(:key "C-h r" :description "start emacs info manual")
+		      '(:key "C-h c [key]" :description "describe key")
+		      '(:key "C-h a [topic]" :description "search help")
+		      '(:key "where-is" :description "Find key for function")
+		      '( :key "M-x customize-group" :description "customize group"))
 
 (cheatsheet-add :group 'Common
 		:key "C-x o n"
@@ -88,25 +92,9 @@
 		:key "C-x zzzzz"
 		:description "repeat last command")
 
-(cheatsheet-add :group 'Learn
-		:key "M-x customize-group"
-		:description "customize group")
-
 (cheatsheet-add :group 'Common
 		:key "C-x C-x"
 		:description "exchange point and mark")
-
-(cheatsheet-add :group 'Learn
-		:key "C-h c [key]"
-		:description "describe key")
-
-(cheatsheet-add :group 'Learn
-		:key "C-h a [topic]"
-		:description "search help")
-
-(cheatsheet-add :group 'Learn
-		:key "where-is"
-		:description "Find key for function")
 
 (cheatsheet-add :group 'Common
 		:key "C-x C-o"
