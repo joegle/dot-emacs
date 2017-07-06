@@ -11,7 +11,8 @@
 ; M-x cheatsheet-show
 (cheatsheet-add-group 'A
 		      '(:key "C-x C-c" :description "leave Emacs")
-		      '(:key "C-x C-f" :description "find file"))
+		      '(:key "C-x C-f" :description "find file")
+		      '(:key "C-x C-v" :description "find-alternate-file"))
 
 (cheatsheet-add-group 'Editing
 		      '(:key "C-o" :description "insert line")
