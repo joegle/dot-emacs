@@ -19,6 +19,7 @@
 		      '(:key "M-z [char]" :description "delete to char")
 		      '(:key "C-x C-f" :description "find file")
 		      '(:key "M-/" :description "delete whitespace")
+		      '(:key "M-c" :description "capitalize word")
 		      '(:key "M-w" :description "copy")
 		      '(:key "C-y" :description "paste")
 		      '(:key "C-x C-x" :description "swap point and mark"))
