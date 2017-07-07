@@ -13,7 +13,7 @@
 
 
 ; Customizations file
-(setq custom-file "~/.emacs.d/customizations.el")
+(setq custom-file "~/.emacs.d/local-customizations.el")
 (load custom-file)
 
 (defgroup joegle nil
