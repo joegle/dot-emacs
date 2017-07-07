@@ -76,6 +76,8 @@
     ;; http://www.emacswiki.org/emacs/Smex
     smex
 
+    fix-word
+
     fill-column-indicator
 
     ;; colorful parenthesis matching
