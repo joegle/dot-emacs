@@ -15,11 +15,11 @@
  ("DEL" . backward-kill-word)
  ("M-/" . delete-horizontal-space)
 
- ("M-j" . move-text-down)
+ ("M-k" . move-text-down)
 
  ("C-x C-\\" . goto-last-change)
 
- ("M-k" . move-text-up))
+ ("M-j" . move-text-up))
 
 (setq backup-directory-alist `(("." . "~/.saves")))
 
