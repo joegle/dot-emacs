@@ -8,16 +8,43 @@ Here be notes from reading the emacs manual:
 
 * Todo
   + [ ] Read the Info guide (press h)
-  + [ ] The the Intro section (press n)
+  + [X] The the Intro section (press n)
   + [ ] Collect sections of interest into org notes
+  + [ ] Read Screen > Point
 
 * Notes 
 
 ** Menu
 
-*** TODO Intro
+*** DONE Intro
+
+    + advanced, self-documenting, customizable, extensible editor
+    + We call Emacs "advanced" because ...
+    + "Self-documenting" means that at any time you can ...
+    + "Customizable" means that you can ...
+    + "Extensible" means that you can go beyond simple customization ...
 
 ** Important General Concepts
+
+*** Screen Organization
+    
+    + frame - graphical window
+
+    + menu bar
+
+    + tool bar
+
+    + echo area
+
+    + window
+
+      + Where the buffer is
+
+      + scroll bar
+
+      + mode line
+
+      + only one active window at a time
 
 ** Funamental Editing Commands
 
