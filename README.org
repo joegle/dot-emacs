@@ -47,6 +47,9 @@
   + [ ] [[https://github.com/escherdragon/sunrise-commander][sunrise commander]]
   + [ ] [[https://www.emacswiki.org/emacs/UndoTree][undo tree]]
   + [ ] [[https://github.com/Fanael/rainbow-delimiters][rainbow-delimiters]]
+  + [ ] [[http://breadcrumbemacs.sourceforge.net/][breadcrumbs]]
+  + [ ] edit symbol tables
+
 
 ** Someday/Maybe
    + [ ] Use init.org?
