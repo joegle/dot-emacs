@@ -17,3 +17,6 @@
  ("C-c C-s" . cheatsheet-show))
 
 
+(require 'dash-at-point)
+(global-set-key (kbd "C-c d a") 'dash-at-point)
+

@@ -76,6 +76,8 @@
     ;; http://www.emacswiki.org/emacs/Smex
     smex
 
+    dash-at-point
+
     fix-word
 
     fill-column-indicator
