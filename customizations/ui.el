@@ -30,3 +30,8 @@
 (global-hl-line-mode 1)
 
 
+(setq-default
+ tab-width 2
+ standard-indent 2
+ indent-tabs-mode nil)
+
