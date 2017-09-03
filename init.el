@@ -176,3 +176,6 @@
 (message "== dot-emacs git status ==")
 (message (shell-command-to-string "git -C ~/.emacs.d/ status -s "))
 
+(setq-default initial-scratch-message
+	      (concat ";; Happy hacking, " user-login-name "\n\n"))
+
