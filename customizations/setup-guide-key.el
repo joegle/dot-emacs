@@ -61,6 +61,9 @@
 		      '(:key "C-x C-f" :description "find file")
 		      '(:key "C-c C-f/b" :description "move to same heading"))
 
+(cheatsheet-add-group 'Debugging
+		      '(:key "C-h m" :description "show active modes")
+		      '(:key "M-x <mode>" :description "toggle mode on/off"))
 
 (cheatsheet-add :group 'Common
 		:key "C-u M-! [CMD]"
