@@ -52,6 +52,8 @@
   + [ ] [[https://github.com/Fanael/rainbow-delimiters][rainbow-delimiters]]
   + [ ] push commands-to-remember to a review list
   + [ ] [[https://unix.stackexchange.com/questions/252995/how-can-mouse-support-be-enabled-in-terminal-emacs][mouse support in terminal]]
+  + [ ] [[http://breadcrumbemacs.sourceforge.net/][breadcrumbs]]
+  + [ ] edit symbol tables
 
 ** Someday/Maybe
    + [ ] Use init.org?
