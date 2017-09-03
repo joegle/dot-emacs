@@ -16,4 +16,6 @@
  ("C-c C-g" . grep-at-cursor)
  ("C-c C-s" . cheatsheet-show))
 
+(setq-default initial-scratch-message
+	      (concat ";; Happy hacking, " user-login-name "\n\n"))
 
