@@ -7,6 +7,9 @@
     : mv ~/.emacs.d ~/.emacs.d-bak
   + Import config
     : mv dot-emacs ~/.emacs.d
+  + Open the cheat sheet (and close it)
+    : C-c C-s 
+    : C-q
 
 ** Repeated Meta Key presses
    Make both of these changes to allow repeated use of Meta modifier without lifting modifier key again.
@@ -47,6 +50,8 @@
   + [ ] [[https://github.com/escherdragon/sunrise-commander][sunrise commander]]
   + [ ] [[https://www.emacswiki.org/emacs/UndoTree][undo tree]]
   + [ ] [[https://github.com/Fanael/rainbow-delimiters][rainbow-delimiters]]
+  + [ ] push commands-to-remember to a review list
+  + [ ] [[https://unix.stackexchange.com/questions/252995/how-can-mouse-support-be-enabled-in-terminal-emacs][mouse support in terminal]]
 
 ** Someday/Maybe
    + [ ] Use init.org?
@@ -59,3 +64,4 @@
   + [[http://planet.emacsen.org/][Planet Emacsen]] - blog
   + [[https://www.reddit.com/r/emacs/][Reddit emacs]]
   + [[https://pinboard.in/t:emacs][Emacs tag]] on Pinboard.in 
+
