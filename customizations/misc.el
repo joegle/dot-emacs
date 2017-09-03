@@ -19,3 +19,6 @@
 (setq-default initial-scratch-message
 	      (concat ";; Happy hacking, " user-login-name "\n\n"))
 
+(require 'dash-at-point)
+(global-set-key (kbd "C-c d a") 'dash-at-point)
+
