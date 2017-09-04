@@ -1,9 +1,10 @@
 (require 'sublimity)
-;(require 'sublimity-scroll)
+(require 'sublimity-scroll)
 ;; (require 'sublimity-map)
 ;; (require 'sublimity-attractive)
 
-(sublimity-mode nil)
+(sublimity-mode 1)
+(push 'self-insert-command sublimity-ignored-scroll-commands)
 
 ;(setq sublimity-scroll-weight 50
 ;      sublimity-scroll-drift-length 45)

@@ -167,7 +167,7 @@
 (load "setup-expand-region.el")
 (load "setup-ace-jump-mode.el")
 (load "setup-god-mode.el")
-;(load "setup-sublimity.el")
+(load "setup-sublimity.el")
 (load "setup-javascript.el")
 (load "setup-clojure.el")
 
