@@ -76,6 +76,8 @@
     ;; http://www.emacswiki.org/emacs/Smex
     smex
 
+    request
+
     dash-at-point
 
     fix-word
@@ -180,4 +182,47 @@
 
 (setq-default initial-scratch-message
 	      (concat ";; Happy hacking, " user-login-name "\n\n"))
+
+(require 'request)
+(require 'cl)
+
+(defvar fb-url "http://httpbin.org/get")
+
+
+(defun fbquery (type str)
+  (let ((url-request-method "GET")
+        (arg-stuff (concat "?query=" (url-hexify-string str)
+                           "&filter=" (url-hexify-string type))))
+    (url-retrieve (concat fb-url arg-stuff)
+                  (lambda (status) (switch-to-buffer (current-buffer))))))
+
+(defun jj ()
+  "http call"
+  (interactive)
+  (request
+   "http://httpbin.org/get"
+
+
+   :parser 'json-read
+   :success (function*
+             (lambda (&key data &allow-other-keys)
+               (message "I sent: %S" (assoc-default 'args data)))))
+  :error
+  (function* (lambda (&key error-thrown &allow-other-keys&rest _)
+                             (message "Got error: %S" error-thrown)))
+  
+  )
+
+
+(defun fetch-json (url)
+  (with-current-buffer (url-retrieve-synchronously url)
+                                        ; there's probably a better way of stripping the headers
+    (search-forward "\n\n")
+    (delete-region (point-min) (point))
+    (buffer-string)))
+
+
+(defun hg ()
+  (interactive)
+  (fetch-json ""))
 
