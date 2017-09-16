@@ -144,7 +144,7 @@
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
-
+(load "race.el")
 
 ;; Customization qq
 
