@@ -13,6 +13,7 @@
 ; M-x cheatsheet-show
 (cheatsheet-add-group 'A
                       '(:key "C-x C-c" :description "leave Emacs")
+                      '(:key "C-x C-w" :description "save buffer as")
                       '(:key "C-x C-v" :description "find-alternate-file"))
 
 (cheatsheet-add-group 'Deleting
