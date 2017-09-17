@@ -100,15 +100,29 @@
 
 (make-variable-buffer-local 'last-post-command-position)
 
+(defun race-target-aquired ()
+  "function to fun when target is aquired"
+  (progn
+    (write-region (format "%s\n" (float-time)) nil "log.txt" 'append))
+    (race-clear-target)
+    (race-mark)
+    (message "Bingo")
+  )
+    
+
 (defun race-hook ()
   "run for each movement to check if on target"
   (unless (equal (point) last-post-command-position)
     (let ((sights (point)))
+      
       (if (equal sights race-target)
-          (message "Bingo")))
+          (race-target-aquired)))
+    
   (setq last-post-command-position (point))))
 
 (add-to-list 'post-command-hook #'race-hook)
+
+(global-auto-revert-mode t)
 
 (provide 'race)
 
