@@ -1,10 +1,10 @@
 ;; race-mode
 ;; Copyright 2017 Joseph Wright joe@joegle.com
 
-; ollowed http://nullprogram.com/blog/2013/02/06/
+; followed http://nullprogram.com/blog/2013/02/06/
 
 (make-variable-buffer-local
- (defvar race-target 0
+ (defvar race-target 1
    "Cursor target position"))
 
 (defun race-start ()
@@ -12,12 +12,54 @@
   (interactive)
   (message "Race started!"))
 
+
+(defun random-from-range (start end)
+  (+ start (random (+ 1 (- end start)))))
+
+(defun random-window-position ()
+  "pick random character to select as "
+  (interactive)
+  (random-from-range (window-start) (window-end)))
+
+(defun race-pick-target ()
+  "pick a good target"
+  (interactive)
+  (let ((target (random-window-position)))
+    (while (is-newline target)
+      (setq target (random-window-position)))
+    (setq race-target target)))
+
+  
+(defun is-newline (position)
+  "check if character is a newline"
+  (interactive)
+  (char-equal (char-after position) ?\n))
+
 (defun race-target-overlay (@begin @end)
     "highlight the target with overlay"
     (interactive "r")
     (progn
       (overlay-put (make-overlay @begin @end) 'face '(:underline t :background "#5fd700" :box t :foreground "black"))
-      (setq mark-active nil )))
+      (setq mark-active nil)))
+
+(defun race-mark ()
+  "select and mark the target"
+  (interactive)
+  (progn
+    ;(race-target-acquired)
+    (race-pick-target)
+    (race-target-overlay race-target (+ 1 race-target))))
+
+(defun race-target-remove (@begin @end)
+    "Remove target overlay on region"
+    (interactive "r")
+    (progn
+      (remove-overlays @begin @end)
+      (setq mark-active nil)))
+
+(defun race-point ()
+  (interactive)
+  (message "The point is at %s" (point)))
 
 (defun race-end ()
   "end the race"
@@ -33,8 +75,12 @@
 (define-minor-mode race-mode
   "Cursor movement racing game"
   :lighter " race"
+  :init-value t
   :keymap (let ((map (make-sparse-keymap)))
             (define-key map (kbd "C-c t") 'race-target-overlay)
+            (define-key map (kbd "C-c p") 'race-point)
+            (define-key map (kbd "C-c m") 'race-mark)
+            (define-key map (kbd "C-c h") 'race-target-remove)
             (define-key map (kbd "C-c s") 'race-start)
             (define-key map (kbd "C-c e") 'race-end)
             map))
