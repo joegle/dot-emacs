@@ -4,14 +4,13 @@
 ; followed http://nullprogram.com/blog/2013/02/06/
 
 (make-variable-buffer-local
- (defvar race-target 1
+ (defvar race-target nil
    "Cursor target position"))
 
 (defun race-start ()
   "start the race"
   (interactive)
   (message "Race started!"))
-
 
 (defun random-from-range (start end)
   (+ start (random (+ 1 (- end start)))))
@@ -57,6 +56,14 @@
       (remove-overlays @begin @end)
       (setq mark-active nil)))
 
+(defun race-clear-target ()
+  "clear the active target"
+  (interactive)
+  (progn
+    (race-target-remove race-target (+ 1 race-target))
+    (setq race-target nil)))
+  
+
 (defun race-point ()
   (interactive)
   (message "The point is at %s" (point)))
@@ -80,13 +87,28 @@
             (define-key map (kbd "C-c t") 'race-target-overlay)
             (define-key map (kbd "C-c p") 'race-point)
             (define-key map (kbd "C-c m") 'race-mark)
-            (define-key map (kbd "C-c h") 'race-target-remove)
+            (define-key map (kbd "C-c c") 'race-clear-target)
             (define-key map (kbd "C-c s") 'race-start)
             (define-key map (kbd "C-c e") 'race-end)
             map))
 
 ;;;###autoload
 (add-hook 'text-mode-hook 'race-mode)
+
+(defvar last-post-command-position 0
+  "Holds the cursor position from the last run of post-command-hooks.")
+
+(make-variable-buffer-local 'last-post-command-position)
+
+(defun race-hook ()
+  "run for each movement to check if on target"
+  (unless (equal (point) last-post-command-position)
+    (let ((sights (point)))
+      (if (equal sights race-target)
+          (message "Bingo")))
+  (setq last-post-command-position (point))))
+
+(add-to-list 'post-command-hook #'race-hook)
 
 (provide 'race)
 
