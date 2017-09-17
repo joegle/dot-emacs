@@ -30,9 +30,13 @@
 
   
 (defun is-newline (position)
-  "check if character is a newline"
+  "check if buffer position is whitespace"
   (interactive)
-  (char-equal (char-after position) ?\n))
+  (let ((the-char (char-after position)))
+        (or
+         (char-equal the-char ?\s)
+         (char-equal the-char ?\t)
+         (char-equal the-char ?\n))))
 
 (defun race-target-overlay (@begin @end)
     "highlight the target with overlay"
