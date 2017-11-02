@@ -11,6 +11,7 @@
     : C-c C-s 
     : C-q
 
+
 ** Repeated Meta Key presses
    Make both of these changes to allow repeated use of Meta modifier without lifting modifier key again.
 
@@ -22,7 +23,8 @@
      2. Under 'Keys' tab map option keys to Meta (not '+Esc')
 
 
-* Todo
+* Todos
+
   + [ ] Spaced repetition training based on [[https://www.youtube.com/watch?v%3DfCn8zs912OE][zipf's law]]
     + [ ] [[http://orgmode.org/worg/org-contrib/org-drill.html][set-up org-drill flash card sets]]
     + [ ] Set up random review prompt function
@@ -54,12 +56,29 @@
   + [ ] [[https://unix.stackexchange.com/questions/252995/how-can-mouse-support-be-enabled-in-terminal-emacs][mouse support in terminal]]
   + [ ] [[http://breadcrumbemacs.sourceforge.net/][breadcrumbs]]
   + [ ] edit symbol tables
+  + [ ] disable or remap arrow keys
+
+** Bugs to Fix
+   + [ ] center on screen
+   + [ ] Golang mode conflicts
+   + [ ] Mac / iTerm2 hexcodes
+
+** Mastery Todos
+  + [ ] Searching
+  + [ ] Replacing
+  + [ ] capitalizing
+  + [ ] Help system
+  + [ ] making own macros
+    
 
 ** Someday/Maybe
    + [ ] Use init.org?
      + [[https://github.com/larstvei/dot-emacs][larstvei's setup]]
      + [[http://emacs.stackexchange.com/questions/3143/can-i-use-org-mode-to-structure-my-emacs-or-other-el-configuration-file][Can I use org-mode to structure my .emacs or other .el configuration file?]] - StackOverflow
    + [[http://chrisdone.com/posts/emacs-key-analysis][analysis of keystrokes]]
+
+** Bad Habits 
+   + Using 
 
 * References
   + [[https://plus.google.com/communities/114815898697665598016][Emacs group on Google+]]
