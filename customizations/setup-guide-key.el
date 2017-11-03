@@ -11,8 +11,16 @@
 (global-set-key (kbd "C-c C-s") 'cheatsheet-show)
 
 ; M-x cheatsheet-show
+(cheatsheet-add-group 'Learn
+                      '(:key "C-x C-\\" :description "goto-last-change")
+                      '(:key "C-c C-g" :description "grep-at-cursor")
+                      '(:key "C-h r" :description "start emacs info manual")
+                      '(:key "C-h c [key]" :description "describe key")
+                      '(:key "C-h a [topic]" :description "search help")
+                      '(:key "where-is" :description "Find key for function")
+                      '(:key "M-x customize-group" :description "customize group"))
+
 (cheatsheet-add-group 'A
-                      '(:key "C-x C-c" :description "leave Emacs")
                       '(:key "C-x C-w" :description "save buffer as")
                       '(:key "C-x C-v" :description "find-alternate-file"))
 
@@ -68,12 +76,3 @@
                 :key "C-coN"
                 :description "find daypage")
 
-(cheatsheet-add-group 'Learn
-                      '(:key "C-x C-\\" :description "goto-last-change")
-                      '(:key "C-c C-g" :description "grep-at-cursor")
-                      '(:key "C-q" :description "close cheatsheet")
-                      '(:key "C-h r" :description "start emacs info manual")
-                      '(:key "C-h c [key]" :description "describe key")
-                      '(:key "C-h a [topic]" :description "search help")
-                      '(:key "where-is" :description "Find key for function")
-                      '(:key "M-x customize-group" :description "customize group"))
