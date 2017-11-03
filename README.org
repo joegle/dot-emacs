@@ -71,6 +71,7 @@
    + [ ] Golang mode conflicts
    + [ ] Mac / iTerm2 hexcodes
    + [ ] elisp comments center themselves
+   + [ ] autocomplete is jagged
 
 ** Bad Habits 
    + Using 
@@ -81,6 +82,7 @@
   + [ ] capitalizing
   + [ ] Help system
   + [ ] making own macros
+  + [ ] Autocomplete
 
 * References
   + [[https://plus.google.com/communities/114815898697665598016][Emacs group on Google+]]
