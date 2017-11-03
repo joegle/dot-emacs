@@ -171,6 +171,9 @@
 (load "setup-javascript.el")
 (load "setup-clojure.el")
 
+(if (eq system-type 'darwin)
+    (load "setup-mac.el"))
+
 ;; Language-specific
 ;(load "setup-clojure.el")
 ;(load "setup-js.el")

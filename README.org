@@ -1,4 +1,5 @@
 #+TITLE: Joegle - dot-emacs
+#+STARTUP: content
 
 * Setup guide
   + Clone
@@ -11,7 +12,6 @@
     : C-c C-s 
     : C-q
 
-
 ** Repeated Meta Key presses
    Make both of these changes to allow repeated use of Meta modifier without lifting modifier key again.
 
@@ -21,7 +21,8 @@
    + iTerm2
      1. Open Profile editor
      2. Under 'Keys' tab map option keys to Meta (not '+Esc')
-
+   + Other useful
+     + [[http://webframp.com/emacs/2013/02/22/fixing-emacs-bindings-on-the-in-iterm2/][Fixing Meta + Shift problems on iTerm2]]
 
 * Todos
 
@@ -57,11 +58,22 @@
   + [ ] [[http://breadcrumbemacs.sourceforge.net/][breadcrumbs]]
   + [ ] edit symbol tables
   + [ ] disable or remap arrow keys
+    
+    
+** Someday/Maybe
+   + [ ] Use init.org?
+     + [[https://github.com/larstvei/dot-emacs][larstvei's setup]]
+     + [[http://emacs.stackexchange.com/questions/3143/can-i-use-org-mode-to-structure-my-emacs-or-other-el-configuration-file][Can I use org-mode to structure my .emacs or other .el configuration file?]] - StackOverflow
+   + [[http://chrisdone.com/posts/emacs-key-analysis][analysis of keystrokes]]
 
 ** Bugs to Fix
    + [ ] center on screen
    + [ ] Golang mode conflicts
    + [ ] Mac / iTerm2 hexcodes
+   + [ ] elisp comments center themselves
+
+** Bad Habits 
+   + Using 
 
 ** Mastery Todos
   + [ ] Searching
@@ -69,16 +81,6 @@
   + [ ] capitalizing
   + [ ] Help system
   + [ ] making own macros
-    
-
-** Someday/Maybe
-   + [ ] Use init.org?
-     + [[https://github.com/larstvei/dot-emacs][larstvei's setup]]
-     + [[http://emacs.stackexchange.com/questions/3143/can-i-use-org-mode-to-structure-my-emacs-or-other-el-configuration-file][Can I use org-mode to structure my .emacs or other .el configuration file?]] - StackOverflow
-   + [[http://chrisdone.com/posts/emacs-key-analysis][analysis of keystrokes]]
-
-** Bad Habits 
-   + Using 
 
 * References
   + [[https://plus.google.com/communities/114815898697665598016][Emacs group on Google+]]
