@@ -50,6 +50,7 @@
 
 ;; Define package repositories
 (require 'package)
+(package-initialize)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives
@@ -58,7 +59,6 @@
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
 ;; This also sets the load path.
-(package-initialize)
 
 
 ;; Download the ELPA archive description if needed.
@@ -75,6 +75,8 @@
     ;; a filterable list of possible commands in the minibuffer
     ;; http://www.emacswiki.org/emacs/Smex
     smex
+
+    projectile
 
     dash-at-point
 
