@@ -58,6 +58,7 @@
   + [ ] [[http://breadcrumbemacs.sourceforge.net/][breadcrumbs]]
   + [ ] edit symbol tables
   + [ ] disable or remap arrow keys
+  + [ ] ace-window
     
     
 ** Someday/Maybe
@@ -72,6 +73,7 @@
    + [ ] Mac / iTerm2 hexcodes
    + [ ] elisp comments center themselves
    + [ ] autocomplete is jagged
+   + [ ] Figure out why sublimity will blink the screen
 
 ** Bad Habits 
    + Using 
