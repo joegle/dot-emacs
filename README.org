@@ -78,10 +78,23 @@
 ** Bad Habits 
    + Using 
 
+
 ** Mastery Todos
-  + [ ] Searching
+   + [[http://ergoemacs.org/emacs/effective_emacs.html][Tips on Long Term Emacs Productivity]]
+     + [ ] Everything is a Command
+       + describe-key
+       + describe-function : find the binding and def of function
+       + describe-mode : find keys in the mode
+       + apropos-command : find key by string match
+     + [ ] Master Window Splitting
+     + [ ] Master Dired
+     + [ ] Master Buffer Switching
+     + [ ] Remap Most Frequently Used Keys
+     + [ ] Master Find Replace and Emacs Regex
+
+
   + [ ] Replacing
-  + [ ] capitalizing
+  + [ ] Searching
   + [ ] Help system
   + [ ] making own macros
   + [ ] Autocomplete
