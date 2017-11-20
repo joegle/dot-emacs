@@ -58,6 +58,7 @@
   + [ ] [[http://breadcrumbemacs.sourceforge.net/][breadcrumbs]]
   + [ ] edit symbol tables
   + [ ] disable or remap arrow keys
+  + [ ] [[http://tuhdo.github.io/helm-intro.html][helm]]
     
     
 ** Someday/Maybe
