@@ -10,11 +10,13 @@
 (global-set-key (kbd "M-l") #'fix-word-downcase)
 (global-set-key (kbd "M-c") #'fix-word-capitalize)
 
+(require 'expand-region)
+
 (bind-keys*
  ("M-DEL" . backward-delete-char)
  ("DEL" . backward-kill-word)
  ("M-/" . delete-horizontal-space)
-
+ ("C-c C-d" . er/expand-region)
  ("C-x C-\\" . goto-last-change)
 
  ("M-k" . move-text-up)
