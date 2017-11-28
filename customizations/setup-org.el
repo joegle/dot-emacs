@@ -1,5 +1,10 @@
 (require 'org)
 
+(setq org-modules '(org-velocity))
+(eval-after-load 'org
+ '(org-load-modules-maybe t))
+
+
 (defun guide-key/my-hook-function-for-org-mode ()
   (guide-key/add-local-guide-key-sequence "C-c")
   (guide-key/add-local-guide-key-sequence "C-c C-x")
