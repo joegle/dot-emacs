@@ -11,7 +11,6 @@
 (setq doRepeat t)
 (random t)
 
-
 ; Customizations file
 (setq custom-file "~/.emacs.d/local-customizations.el")
 (load custom-file)
@@ -55,6 +54,9 @@
 	     '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives
 	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+
+(add-to-list 'package-archives
+             '("org" . "http://orgmode.org/elpa/") t)
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
