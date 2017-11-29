@@ -9,18 +9,18 @@
 
 ;;; License
 ;;
-;; This program is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License version 2 as
-;; published by the Free Software Foundation.
-;;
-;; This program is distributed in the hope that it will be useful,
+;; This program is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+;; 
+;; This program is distributed in he hope that it will be useful,
 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ;; GNU General Public License for more details.
-;;
+;; 
 ;; You should have received a copy of the GNU General Public License
-;; along with GNU Emacs; see the file COPYING.  If not, write to
-;; the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;;
 
 ;;; Installation
@@ -144,13 +144,23 @@ org-time-stamp except the default date will be the date of the daypage."
   (org-time-stamp nil))
 
 (defun daypage-new-item ()
-  "Switches to the current daypage and inserts a top level heading and a timestamp"
+  "switches to the current daypage and inserts a top level heading and a timestamp"
   (interactive)
   (todays-daypage)
   (end-of-buffer)
   (if (not (bolp))
       (insert "\n"))
-  (insert "* <" (format-time-string "%Y-%m-%d %a" (daypage-date)) "> "))
+  (insert "* <" (format-time-string "%Y-%m-%d %H:%M") "> "))
 
+(defun daypage-random-prompt ()
+  "switches to the current daypage and inserts a top level heading and a timestamp"
+  (interactive)
+  (todays-daypage)
+  (end-of-buffer)
+  (if (not (bolp))
+      (insert "\n"))
+  (progn
+    (insert "* " (r-prompt) " <" (format-time-string "%Y-%m-%d %H:%M") "> ")
+    (org-timer-set-timer 5)))
 
 (provide 'org-daypage)
