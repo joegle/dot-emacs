@@ -1,5 +1,8 @@
 (require 'org)
 
+
+; M-x customize-apropos org-modules
+
 (setq org-modules '(org-velocity))
 (eval-after-load 'org
  '(org-load-modules-maybe t))
