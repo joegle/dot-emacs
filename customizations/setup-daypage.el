@@ -3,6 +3,7 @@
 
 (define-key daypage-mode-map (kbd "<C-left>") 'daypage-prev)
 (define-key daypage-mode-map (kbd "<C-right>") 'daypage-next)
+(define-key daypage-mode-map (kbd "C-c 5") 'daypage-random-prompt)
 
 ;; (define-key daypage-mode-map (kbd "<C-left>") 'daypage-prev)
 ;; (define-key daypage-mode-map (kbd "<C-right>") 'daypage-next)
