@@ -144,13 +144,13 @@ org-time-stamp except the default date will be the date of the daypage."
   (org-time-stamp nil))
 
 (defun daypage-new-item ()
-  "Switches to the current daypage and inserts a top level heading and a timestamp"
+  "switches to the current daypage and inserts a top level heading and a timestamp"
   (interactive)
   (todays-daypage)
   (end-of-buffer)
   (if (not (bolp))
       (insert "\n"))
-  (insert "* <" (format-time-string "%Y-%m-%d %a" (daypage-date)) "> "))
+  (insert "* <" (format-time-string "%Y-%m-%d %H:%M") "> "))
 
 
 (provide 'org-daypage)
