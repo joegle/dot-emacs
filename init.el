@@ -29,6 +29,37 @@
   :type 'integer
   :group 'joegle)
 
+(defcustom joegle-prompt-file "~/.prompts"
+  "each line of this file is a prompt"
+  :type 'file
+  :group 'joegle)
+
+(defun read-lines (filePath)
+  "Return a list of lines of a file at filePath."
+  (with-temp-buffer
+    (insert-file-contents filePath)
+    (split-string (buffer-string) "\n" t)))
+
+(defun random-pick-from-list (m lst)
+  "pick m non-repeating elements from list 
+    burubaxair.wordpress.com"
+  (let ((lng-lst (length lst)))
+    (if (or (<= m 0) (> m lng-lst))
+      nil
+      (loop 
+        with el 
+        until (= (length rand-lst) m)
+        when (not (find 
+                    (setf el (nth (random lng-lst) lst)) 
+                    rand-lst))
+          append (list el) into rand-lst 
+        finally (return rand-lst)))))
+
+(defun r-prompt ()
+  "Return random prompt from prompt set"
+  (interactive)
+  (car (random-pick-from-list 1 (read-lines joegle-prompt-file))))
+    
 (defun chance-n (n)
   "Random chance out of n"
   (eq 0 (random n)))

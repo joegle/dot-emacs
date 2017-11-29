@@ -152,5 +152,15 @@ org-time-stamp except the default date will be the date of the daypage."
       (insert "\n"))
   (insert "* <" (format-time-string "%Y-%m-%d %H:%M") "> "))
 
+(defun daypage-random-prompt ()
+  "switches to the current daypage and inserts a top level heading and a timestamp"
+  (interactive)
+  (todays-daypage)
+  (end-of-buffer)
+  (if (not (bolp))
+      (insert "\n"))
+  (progn
+    (insert "* " (r-prompt) " <" (format-time-string "%Y-%m-%d %H:%M") "> ")
+    (org-timer-set-timer 5)))
 
 (provide 'org-daypage)
