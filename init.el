@@ -11,7 +11,6 @@
 (setq doRepeat t)
 (random t)
 
-
 ; Customizations file
 (setq custom-file "~/.emacs.d/local-customizations.el")
 (load custom-file)
@@ -30,6 +29,37 @@
   :type 'integer
   :group 'joegle)
 
+(defcustom joegle-prompt-file "~/.prompts"
+  "each line of this file is a prompt"
+  :type 'file
+  :group 'joegle)
+
+(defun read-lines (filePath)
+  "Return a list of lines of a file at filePath."
+  (with-temp-buffer
+    (insert-file-contents filePath)
+    (split-string (buffer-string) "\n" t)))
+
+(defun random-pick-from-list (m lst)
+  "pick m non-repeating elements from list 
+    burubaxair.wordpress.com"
+  (let ((lng-lst (length lst)))
+    (if (or (<= m 0) (> m lng-lst))
+      nil
+      (loop 
+        with el 
+        until (= (length rand-lst) m)
+        when (not (find 
+                    (setf el (nth (random lng-lst) lst)) 
+                    rand-lst))
+          append (list el) into rand-lst 
+        finally (return rand-lst)))))
+
+(defun r-prompt ()
+  "Return random prompt from prompt set"
+  (interactive)
+  (car (random-pick-from-list 1 (read-lines joegle-prompt-file))))
+    
 (defun chance-n (n)
   "Random chance out of n"
   (eq 0 (random n)))
@@ -50,15 +80,18 @@
 
 ;; Define package repositories
 (require 'package)
+(package-initialize)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives
 	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
+(add-to-list 'package-archives
+             '("org" . "http://orgmode.org/elpa/") t)
+
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
 ;; This also sets the load path.
-(package-initialize)
 
 
 ;; Download the ELPA archive description if needed.
@@ -75,6 +108,8 @@
     ;; a filterable list of possible commands in the minibuffer
     ;; http://www.emacswiki.org/emacs/Smex
     smex
+
+    projectile
 
     dash-at-point
 
@@ -167,7 +202,7 @@
 ;(load "setup-expand-region.el")
 (load "setup-ace-jump-mode.el")
 (load "setup-god-mode.el")
-(load "setup-sublimity.el")
+;(load "setup-sublimity.el")
 (load "setup-javascript.el")
 (load "setup-clojure.el")
 

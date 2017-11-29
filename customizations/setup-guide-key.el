@@ -12,6 +12,9 @@
 
 ; M-x cheatsheet-show
 (cheatsheet-add-group 'Learn
+                      '(:key "C-c on" :description "Open daypage")
+                      '(:key "C-c ol" :description "Log item to daypage")
+                      '(:key "C-c 5" :description "start 5 minute log prompt")
                       '(:key "C-x C-\\" :description "goto-last-change")
                       '(:key "C-c C-g" :description "grep-at-cursor")
                       '(:key "C-h r" :description "start emacs info manual")
