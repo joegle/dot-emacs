@@ -62,6 +62,7 @@
   + [ ] [[http://breadcrumbemacs.sourceforge.net/][breadcrumbs]]
   + [ ] edit symbol tables
   + [ ] disable or remap arrow keys
+  + [ ] [[http://tuhdo.github.io/helm-intro.html][helm]]
   + [ ] ace-window
   + [ ] [[http://orgmode.org/manual/Adding-hyperlink-types.html#Adding-hyperlink-types][Add nvalt:// URL scheme links]]
   + [ ] Org velocity

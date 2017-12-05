@@ -1,6 +1,9 @@
 ;disable backups
 (setq backup-inhibited t)
 
+; line number format
+(setq linum-format "%3d ")
+
 ;disable auto save
 (setq auto-save-default nil)
 (setq auto-save-list-file-prefix nil)

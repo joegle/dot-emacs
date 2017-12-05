@@ -199,7 +199,7 @@
 (load "setup-org.el")
 (load "setup-guide-key.el")
 (load "setup-auto-complete.el")
-(load "setup-expand-region.el")
+;(load "setup-expand-region.el")
 (load "setup-ace-jump-mode.el")
 (load "setup-god-mode.el")
 ;(load "setup-sublimity.el")
