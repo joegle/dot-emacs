@@ -20,6 +20,7 @@
                       '(:key "C-h r" :description "start emacs info manual")
                       '(:key "C-h c [key]" :description "describe key")
                       '(:key "C-h a [topic]" :description "search help")
+                      '(:key "M-x apropos" :description "apropos help search")
                       '(:key "where-is" :description "Find key for function")
                       '(:key "M-x customize-group" :description "customize group"))
 
