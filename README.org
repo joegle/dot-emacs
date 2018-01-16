@@ -40,6 +40,9 @@
   + [X] capitalize current word
   + [X] [[https://github.com/camdez/goto-last-change.el][goto-last-change]]
   + [ ] Ctags
+  + [ ] Item 2: Invoke M-x without the Alt key
+    : (global-set-key "\C-x\C-m" 'execute-extended-command)
+  + [ ] learn transpose-* commands
   + [ ] [[https://emacs-doctor.com/tutorial-introduction-searching-emacs.html][Searching]]
   + [ ] [[https://github.com/tlh/workgroups.el][Windowing package]]
   + [ ] [[https://github.com/scallywag/org-board][org-board]] - offline webpage archive
