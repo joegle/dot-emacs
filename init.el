@@ -97,8 +97,9 @@
 ;; Download the ELPA archive description if needed.
 ;; This informs Emacs about the latest versions of all packages, and
 ;; makes them available for download.
-(when (not package-archive-contents)
-  (package-refresh-contents))
+;(when (not package-archive-contents)
+					;  (package-refresh-contents))
+(package-refresh-contents)
 
 ;; The packages you want installed. You can also install these
 ;; manually with M-x package-install
@@ -110,6 +111,8 @@
     smex
 
     projectile
+
+    multi-web-mode
 
     dash-at-point
 
