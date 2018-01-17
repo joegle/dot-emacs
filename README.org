@@ -24,6 +24,13 @@
    + Other useful
      + [[http://webframp.com/emacs/2013/02/22/fixing-emacs-bindings-on-the-in-iterm2/][Fixing Meta + Shift problems on iTerm2]]
 
+** Org-drill
+   + Enable org-drill
+     : M-x customize-variables RET org-modules
+   + Start org-drill while in a org file
+     : M-x org-drill
+   + See [[https://bitbucket.org/eeeickythump/org-drill][org-drill question/answer format]]
+
 * Todos
 
   + [ ] Review Emacs.txt
@@ -69,6 +76,8 @@
     + or [[https://github.com/Fuco1/sallet][sallet]]
   + [ ] toggle comment on current line or region
   + [ ] Org-capture end-of-day command quiz
+  + [ ] remap kill-whole-line
+  + [ ] [[https://johnsogg.github.io/emacs-golang][emacs golang setup]]
     
 ** Someday/Maybe
    + [ ] Use init.org?
