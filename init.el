@@ -12,6 +12,7 @@
 (random t)
 
 ; Customizations file
+; git update-index --assume-unchanged local-customizations.el
 (setq custom-file "~/.emacs.d/local-customizations.el")
 (load custom-file)
 
@@ -195,6 +196,7 @@
 
 (load "misc.el")
 
+(load "setup-fci.el")
 (load "setup-neotree.el")
 (load "setup-moe.el")
 (load "setup-deft.el")
@@ -216,9 +218,8 @@
 ;(load "setup-clojure.el")
 ;(load "setup-js.el")
 
-(message "== dot-emacs git status ==")
+
+(message "🔸🔸 dot-emacs git status 🔷🔷")
 (message (shell-command-to-string "git -C ~/.emacs.d/ status -s "))
 
-(setq-default initial-scratch-message
-	      (concat ";; Happy hacking, " user-login-name "\n\n"))
 

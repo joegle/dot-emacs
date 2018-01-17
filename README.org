@@ -92,6 +92,9 @@
    + [ ] elisp comments center themselves
    + [ ] autocomplete is jagged
    + [ ] Figure out why sublimity will blink the screen
+   + [ ] turn off FCI mode for neotree and other small windows
+     + Turn off FCI mode when more than one window is on
+     + Or disable line wrapping
 
 ** Bad Habits 
    + Using 

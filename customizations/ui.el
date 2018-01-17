@@ -1,8 +1,6 @@
 ;disable backups
 (setq backup-inhibited t)
-
-; line number format
-(setq linum-format "%3d ")
+(setq backup-directory-alist `(("." . "~/.saves")))
 
 ;disable auto save
 (setq auto-save-default nil)
@@ -11,6 +9,9 @@
 ;; Show line numbers
 (global-linum-mode)
 
+; line number format
+(setq linum-format "%3d ")
+
 (global-visual-line-mode t)
 
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
@@ -18,20 +19,8 @@
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message "")
 
-
 ; disable the toolbar with icons
 (tool-bar-mode -1)
-
-
-(require 'fill-column-indicator)
-
-(setq-default fill-column 80)
-(define-globalized-minor-mode my-global-fci-mode fci-mode turn-on-fci-mode)
-
-(my-global-fci-mode 1)
-
-(global-hl-line-mode 1)
-
 
 (setq-default
  tab-width 2

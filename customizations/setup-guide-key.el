@@ -1,4 +1,5 @@
 (require 'guide-key)
+
 (setq guide-key/guide-key-sequence
       '("C-x r" "C-x"
         (org-mode "C-c")
@@ -20,6 +21,7 @@
                       '(:key "C-h r" :description "start emacs info manual")
                       '(:key "C-h c [key]" :description "describe key")
                       '(:key "C-h a [topic]" :description "search help")
+                      '(:key "C-c d a" :description "dash-at-point")
                       '(:key "M-x apropos" :description "apropos help search")
                       '(:key "where-is" :description "Find key for function")
                       '(:key "M-x customize-group" :description "customize group"))
