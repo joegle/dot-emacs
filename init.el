@@ -97,6 +97,7 @@
 ;; Download the ELPA archive description if needed.
 ;; This informs Emacs about the latest versions of all packages, and
 ;; makes them available for download.
+
 (when (not package-archive-contents)
   (package-refresh-contents))
 
@@ -110,6 +111,8 @@
     smex
 
     projectile
+
+    multi-web-mode
 
     dash-at-point
 
