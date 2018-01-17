@@ -11,6 +11,10 @@
   + Open the cheat sheet (and close it)
     : C-c C-s 
     : C-q
+  + Set git author
+    : git config user.name "Joseph Wright"
+    : git config user.email joegle@gmail.com
+    : git config user.signingkey 0G78D5H
 
 ** Repeated Meta Key presses
    Make both of these changes to allow repeated use of Meta modifier without lifting modifier key again.
