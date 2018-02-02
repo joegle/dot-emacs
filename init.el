@@ -11,6 +11,7 @@
 (setq doRepeat t)
 (random t)
 
+
 ; Customizations file
 ; git update-index --assume-unchanged local-customizations.el
 (setq custom-file "~/.emacs.d/local-customizations.el")
@@ -184,6 +185,13 @@
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
+(require 'sky-color-clock)
+(sky-color-clock-initialize 40)
+(setq sky-color-clock-format " %d %-I:%M")
+
+(push '(:eval (sky-color-clock)) (default-value 'mode-line-format))
+(sky-color-clock-initialize-openweathermap-client "c69a71e8736257ff7f6823d04d437ca1" 5206379)
+(setq sky-color-clock-enable-emoji-icon t)
 
 ;; Customization qq
 
