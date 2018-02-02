@@ -82,6 +82,7 @@
   + [ ] Org-capture end-of-day command quiz
   + [ ] remap kill-whole-line
   + [ ] [[https://johnsogg.github.io/emacs-golang][emacs golang setup]]
+  + [ ] Short cut to open README.org of current project
     
 ** Someday/Maybe
    + [ ] Use init.org?

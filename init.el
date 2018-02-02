@@ -210,6 +210,7 @@
 ;(load "setup-sublimity.el")
 (load "setup-javascript.el")
 (load "setup-clojure.el")
+(load "setup-go.el")
 
 (if (eq system-type 'darwin)
     (load "setup-mac.el"))
