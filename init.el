@@ -95,6 +95,8 @@
 ;; packages are loaded before you start trying to modify them.
 ;; This also sets the load path.
 
+(when (not package-archive-contents)
+  (package-refresh-contents))
 
 ;; Download the ELPA archive description if needed.
 ;; This informs Emacs about the latest versions of all packages, and
