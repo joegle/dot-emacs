@@ -18,13 +18,23 @@
                       '(:key "C-c 5" :description "start 5 minute log prompt")
                       '(:key "C-x C-\\" :description "goto-last-change")
                       '(:key "C-c C-g" :description "grep-at-cursor")
-                      '(:key "C-h r" :description "start emacs info manual")
-                      '(:key "C-h c [key]" :description "describe key")
-                      '(:key "C-h a [topic]" :description "search help")
                       '(:key "C-c d a" :description "dash-at-point")
                       '(:key "M-x apropos" :description "apropos help search")
                       '(:key "where-is" :description "Find key for function")
                       '(:key "M-x customize-group" :description "customize group"))
+
+(cheatsheet-add-group 'Help
+                      '(:key "C-h a [topic]" :description "apropos")
+                      '(:key "C-h c [key]" :description "describe key")
+                      '(:key "C-h d [topic]" :description "search documentation")
+                      '(:key "C-h f [function]" :description "document a function")
+                      '(:key "C-h k [key]" :description "document a binding")
+                      '(:key "C-h l" :description "last 300 commands")
+                      '(:key "C-h o/v" :description "describe symbol/variable")
+                      '(:key "C-h m" :description "describe current modes")
+                      '(:key "C-h r" :description "start emacs info manual")
+                      '(:key "C-h w" :description "show binding for function")
+                      )
 
 (cheatsheet-add-group 'A
                       '(:key "C-x C-w" :description "save buffer as")
