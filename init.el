@@ -83,13 +83,10 @@
 ;; Define package repositories
 (require 'package)
 (package-initialize)
-(add-to-list 'package-archives
-	     '("melpa" . "http://melpa.org/packages/") t)
-(add-to-list 'package-archives
-	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
-(add-to-list 'package-archives
-             '("org" . "http://orgmode.org/elpa/") t)
+(setq package-archives '(("melpa" . "http://melpa.org/packages/")
+			 ("melpa-stable" . "http://stable.melpa.org/packages/")
+			 ("org" . "http://orgmode.org/elpa/")))
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
@@ -99,6 +96,9 @@
 ;; Download the ELPA archive description if needed.
 ;; This informs Emacs about the latest versions of all packages, and
 ;; makes them available for download.
+
+; When you have trouble getting packages:
+;(package-refresh-contents)
 
 (when (not package-archive-contents)
   (package-refresh-contents))
@@ -112,6 +112,8 @@
     ;; http://www.emacswiki.org/emacs/Smex
     smex
 
+    rjsx-mode
+    
     projectile
 
     multi-web-mode

@@ -22,4 +22,3 @@
  ("M-k" . move-text-up)
  ("M-j" . move-text-down))
 
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))

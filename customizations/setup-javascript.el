@@ -17,3 +17,4 @@
 (setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
 (multi-web-global-mode 1)
 
+;(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
