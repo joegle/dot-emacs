@@ -112,6 +112,8 @@
     ;; http://www.emacswiki.org/emacs/Smex
     smex
 
+    rg
+
     rjsx-mode
     
     projectile
@@ -207,6 +209,7 @@
 (load "misc.el")
 
 (load "setup-fci.el")
+(load "setup-grep.el")
 (load "setup-neotree.el")
 (load "setup-moe.el")
 (load "setup-deft.el")
@@ -218,7 +221,7 @@
 (load "setup-ace-jump-mode.el")
 (load "setup-god-mode.el")
 ;(load "setup-sublimity.el")
-(load "setup-javascript.el")
+;(load "setup-javascript.el")
 (load "setup-clojure.el")
 (load "setup-go.el")
 
@@ -234,3 +237,7 @@
 (message (shell-command-to-string "git -C ~/.emacs.d/ status -s "))
 
 
+(with-eval-after-load 'rjsx-mode
+  (define-key rjsx-mode-map "<" nil)
+  (define-key rjsx-mode-map (kbd "C-d") nil)
+  (define-key rjsx-mode-map ">" nil))
