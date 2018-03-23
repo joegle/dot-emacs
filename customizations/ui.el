@@ -27,3 +27,4 @@
  standard-indent 2
  indent-tabs-mode nil)
 
+(require 'zen-mode)
