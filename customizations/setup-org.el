@@ -27,6 +27,8 @@
 (setq org-export-with-sub-superscripts nil)
 (setq org-hide-leading-stars t)
 (setq org-startup-folded "nofold")
+(setq org-latex-packages-alist (quote (("" "chemfig" t))))
+(setq org-latex-create-formula-image-program (quote imagemagick))
 
 (org-add-link-type
  "yt"
