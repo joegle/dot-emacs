@@ -34,61 +34,61 @@
    + Start org-drill while in a org file
      : M-x org-drill
    + See [[https://bitbucket.org/eeeickythump/org-drill][org-drill question/answer format]]
+   + Spaced repetition training based on [[https://www.youtube.com/watch?v%3DfCn8zs912OE][zipf's law]]
+     + [ ] [[http://orgmode.org/worg/org-contrib/org-drill.html][set-up org-drill flash card sets]]
+     + [ ] Set up random review prompt function
 
 * Todos
+** Inbox
+   + [ ] Review Emacs.txt
+   + [ ] Spell check
+   + [ ] Snippets
+     + [ ] https://github.com/tuhdo/org-recipes
+   + [ ] Item 2: Invoke M-x without the Alt key
+     : (global-set-key "\C-x\C-m" 'execute-extended-command)
+   + [ ] [[https://github.com/scallywag/org-board][org-board]] - offline webpage archive
+   + [ ] [[https://blog.aaronbieber.com/2017/03/19/organizing-notes-with-refile.html][set up org refile]]
+   + [ ] review [[https://github.com/emacs-tw/awesome-emacs][awesome-emacs]]
+   + [ ] [[https://github.com/Fanael/rainbow-delimiters][rainbow-delimiters]]
+   + [ ] [[https://unix.stackexchange.com/questions/252995/how-can-mouse-support-be-enabled-in-terminal-emacs][mouse support in terminal]]
+   + [ ] disable or remap arrow keys
+   + [ ] [[http://orgmode.org/manual/Adding-hyperlink-types.html#Adding-hyperlink-types][Add nvalt:// URL scheme links]]
+   + [ ] Org velocity or [[https://github.com/Fuco1/sallet][sallet]]
+   + [ ] toggle comment on current line or region
 
-  + [ ] Review Emacs.txt
-  + [ ] Spaced repetition training based on [[https://www.youtube.com/watch?v%3DfCn8zs912OE][zipf's law]]
-    + [ ] [[http://orgmode.org/worg/org-contrib/org-drill.html][set-up org-drill flash card sets]]
-    + [ ] Set up random review prompt function
-  + [ ] Spell check
-  + [ ] Snippets
-    + [ ] https://github.com/tuhdo/org-recipes
-  + [ ] [[http://emacs.stackexchange.com/questions/14347/collapse-split-windows][split windows shortcuts]]
-  + [ ] yafold
-  + [ ] [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html][Registers]]
-  + [ ] Hide-mode line
-  + [X] capitalize current word
-  + [X] [[https://github.com/camdez/goto-last-change.el][goto-last-change]]
-  + [ ] Ctags
-  + [ ] Item 2: Invoke M-x without the Alt key
-    : (global-set-key "\C-x\C-m" 'execute-extended-command)
-  + [ ] learn transpose-* commands
-  + [ ] [[https://emacs-doctor.com/tutorial-introduction-searching-emacs.html][Searching]]
-  + [ ] [[https://github.com/tlh/workgroups.el][Windowing package]]
-  + [ ] [[https://github.com/scallywag/org-board][org-board]] - offline webpage archive
-  + [ ] [[https://github.com/yuya373/emacs-slack][slack client]]
-  + [ ] [[https://github.com/chrisdone/god-mode/][god-mode]]
-    + activate with caps lock
-  + [ ] [[https://github.com/jonathanchu/emacs-powerline][powerline]]  
-  + [ ] [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Abbrevs.html][abrev]]
-  + [ ] [[https://blog.aaronbieber.com/2017/03/19/organizing-notes-with-refile.html][set up org refile]]
-  + [ ] review [[https://github.com/emacs-tw/awesome-emacs][awesome-emacs]]
-  + [ ] [[https://github.com/rakanalh/emacs-dashboard][dashboard]]
-  + [ ] [[https://github.com/escherdragon/sunrise-commander][sunrise commander]]
-  + [ ] [[https://www.emacswiki.org/emacs/UndoTree][undo tree]]
-  + [ ] [[https://github.com/Fanael/rainbow-delimiters][rainbow-delimiters]]
-  + [ ] push commands-to-remember to a review list
-  + [ ] [[https://unix.stackexchange.com/questions/252995/how-can-mouse-support-be-enabled-in-terminal-emacs][mouse support in terminal]]
-  + [ ] [[http://breadcrumbemacs.sourceforge.net/][breadcrumbs]]
-  + [ ] edit symbol tables
-  + [ ] disable or remap arrow keys
-  + [ ] [[http://tuhdo.github.io/helm-intro.html][helm]]
-  + [ ] ace-window
-  + [ ] [[http://orgmode.org/manual/Adding-hyperlink-types.html#Adding-hyperlink-types][Add nvalt:// URL scheme links]]
-  + [ ] Org velocity
-    + or [[https://github.com/Fuco1/sallet][sallet]]
-  + [ ] toggle comment on current line or region
-  + [ ] Org-capture end-of-day command quiz
-  + [ ] remap kill-whole-line
-  + [ ] [[https://johnsogg.github.io/emacs-golang][emacs golang setup]]
-  + [ ] Short cut to open README.org of current project
+** Next
+   + [ ] [[https://www.emacswiki.org/emacs/UndoTree][undo tree]]
+   + [ ] [[https://www.emacswiki.org/emacs/HideModeLine][Hide-mode line]]
+   + [ ] push commands-to-remember to a review list
+     + Org-capture end-of-day command quiz
+   + [ ] 5 minute timer
+   + [ ] remap kill-whole-line
+   + [ ] [[https://github.com/pheaver/breadcrumb][breadcrumbs]]
+   + [ ] [[https://github.com/escherdragon/sunrise-commander][sunrise commander]]
+   + Windows
+     + [ ] ace-window
+     + [ ] [[http://emacs.stackexchange.com/questions/14347/collapse-split-windows][split windows shortcuts]]
+     + [ ] [[https://github.com/tlh/workgroups.el][workgroups]]
+   + Python development environment
+     + test running
+     + python docs
+     + snippet search
+   + yafold
+   + Ctags
     
 ** Someday/Maybe
+   + [ ] [[https://johnsogg.github.io/emacs-golang][emacs golang setup]]
    + [ ] Use init.org?
      + [[https://github.com/larstvei/dot-emacs][larstvei's setup]]
      + [[http://emacs.stackexchange.com/questions/3143/can-i-use-org-mode-to-structure-my-emacs-or-other-el-configuration-file][Can I use org-mode to structure my .emacs or other .el configuration file?]] - StackOverflow
    + [[http://chrisdone.com/posts/emacs-key-analysis][analysis of keystrokes]]
+   + [[https://www.emacswiki.org/emacs/GnusGmail][Gnus with Gmail]]
+   + Review Emacs Manual and Info guide
+   + [ ] [[https://github.com/rakanalh/emacs-dashboard][dashboard]]
+   + [ ] [[https://github.com/chrisdone/god-mode/][god-mode]]
+     + activate with caps lock
+   + [[http://tuhdo.github.io/helm-intro.html][helm]] 
+   + [ ] [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Abbrevs.html][abrev]]
 
 ** Bugs to Fix
    + [ ] center on screen
@@ -100,11 +100,12 @@
    + [ ] turn off FCI mode for neotree and other small windows
      + Turn off FCI mode when more than one window is on
      + Or disable line wrapping
-
-** Bad Habits 
-   + Using 
      
 
+** Bad Habits 
+   + Copying with mouse highlight
+
+     
 ** Mastery Todos
    + [[http://ergoemacs.org/emacs/effective_emacs.html][Tips on Long Term Emacs Productivity]]
      + [ ] Everything is a Command
@@ -120,10 +121,13 @@
 
 
   + [ ] Replacing
-  + [ ] Searching
+  + [ ] [[https://emacs-doctor.com/tutorial-introduction-searching-emacs.html][Searching]]
+  + [ ] [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html][Registers]]
   + [ ] Help system
   + [ ] making own macros
   + [ ] Autocomplete
+  + [ ] edit symbol tables
+  + [ ] learn transpose-* commands
 
 * References
   + [[https://plus.google.com/communities/114815898697665598016][Emacs group on Google+]]
