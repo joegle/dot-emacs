@@ -55,6 +55,7 @@
    + [ ] [[http://orgmode.org/manual/Adding-hyperlink-types.html#Adding-hyperlink-types][Add nvalt:// URL scheme links]]
    + [ ] Org velocity or [[https://github.com/Fuco1/sallet][sallet]]
    + [ ] toggle comment on current line or region
+   + [ ] Add [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html][per-directory]] examples for projects
 
 ** Next
    + [ ] [[https://www.emacswiki.org/emacs/UndoTree][undo tree]]
