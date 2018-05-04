@@ -130,9 +130,17 @@
   + [ ] edit symbol tables
   + [ ] learn transpose-* commands
 
+* Notes
+** Shell  
+   + Use ansi-term
+     : M-x ansi-term
+   + Annoying prompt messages
+     : unset PROMPT_COMMAND
+
 * References
   + [[https://plus.google.com/communities/114815898697665598016][Emacs group on Google+]]
   + [[http://planet.emacsen.org/][Planet Emacsen]] - blog
   + [[https://www.reddit.com/r/emacs/][Reddit emacs]]
   + [[https://pinboard.in/t:emacs][Emacs tag]] on Pinboard.in 
+
 
