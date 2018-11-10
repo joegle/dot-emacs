@@ -3,6 +3,8 @@
 (require 'move-text)
 (move-text-default-bindings)
 
+(require 'writegood-mode)
+
 (require 'goto-last-change)
 
 (require 'fix-word)
