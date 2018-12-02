@@ -28,3 +28,5 @@
  indent-tabs-mode nil)
 
 (require 'zen-mode)
+
+(global-hl-line-mode 1)
