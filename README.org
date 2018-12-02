@@ -15,7 +15,7 @@
     : git config user.name "Joseph Wright"
     : git config user.email joegle@gmail.com
     : git config user.signingkey 0G78D5H
-
+    
 ** Repeated Meta Key presses
    Make both of these changes to allow repeated use of Meta modifier without lifting modifier key again.
 
@@ -59,6 +59,7 @@
 
 ** Next
    + [ ] [[https://www.emacswiki.org/emacs/UndoTree][undo tree]]
+   + [ ] Move customization dir to setup/
    + [ ] [[https://www.emacswiki.org/emacs/HideModeLine][Hide-mode line]]
    + [ ] push commands-to-remember to a review list
      + Org-capture end-of-day command quiz
