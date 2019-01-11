@@ -3,6 +3,10 @@
 (setq-default fill-column 80)
 (setq fci-handle-truncate-lines t)
 
+; https://unicode-search.net/unicode-namesearch.pl?term=VERTICAL
+(setq fci-rule-character 9474)
+(setq fci-rule-character-color "blue")
+
 ; https://github.com/alpaker/Fill-Column-Indicator/issues/67#issuecomment-195611974
 (use-package fill-column-indicator
   :ensure t
@@ -33,4 +37,6 @@
     (add-hook 'window-configuration-change-hook
               #'eos/maybe-disable-fci))
   (add-hook 'prog-mode-hook #'eos/add-fci-disabling-hook))
+
+
 
