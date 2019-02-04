@@ -20,7 +20,8 @@
  ("M-/" . delete-horizontal-space)
  ("C-c C-d" . er/expand-region)
  ("C-x C-\\" . goto-last-change)
-
+ ("M-x" . smex)
+ ("M-X" . smex-major-mode-commands)
  ("M-k" . move-text-up)
  ("M-j" . move-text-down))
 

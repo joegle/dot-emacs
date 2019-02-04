@@ -14,6 +14,7 @@
 
 (bind-keys*
  ("C-c C-g" . grep-at-cursor)
+ ("C-x g" . magit-status)
  ("C-c C-s" . cheatsheet-show))
 
 (setq-default initial-scratch-message

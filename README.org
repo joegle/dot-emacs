@@ -120,6 +120,7 @@
      + [ ] Master Buffer Switching
      + [ ] Remap Most Frequently Used Keys
      + [ ] Master Find Replace and Emacs Regex
+   + Watch YouTube videos to learn common usage
 
 
   + [ ] Replacing
