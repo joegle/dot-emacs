@@ -143,8 +143,6 @@
     
     god-mode
 
-    cheatsheet
-
     move-text
     
     auto-complete
