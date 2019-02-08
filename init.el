@@ -11,6 +11,9 @@
 (setq doRepeat t)
 (random t)
 
+; '(browse-url-browser-function (quote browse-url-chrome))
+; '(browse-url-chrome-program
+;    "/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe")
 
 ; Customizations file
 ; git update-index --assume-unchanged local-customizations.el
@@ -83,13 +86,10 @@
 ;; Define package repositories
 (require 'package)
 (package-initialize)
-(add-to-list 'package-archives
-	     '("melpa" . "http://melpa.org/packages/") t)
-(add-to-list 'package-archives
-	     '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
-(add-to-list 'package-archives
-             '("org" . "http://orgmode.org/elpa/") t)
+(setq package-archives '(("melpa" . "http://melpa.org/packages/")
+			 ("melpa-stable" . "http://stable.melpa.org/packages/")
+			 ("org" . "http://orgmode.org/elpa/")))
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
@@ -102,8 +102,12 @@
 ;; This informs Emacs about the latest versions of all packages, and
 ;; makes them available for download.
 
-(when (not package-archive-contents)
-  (package-refresh-contents))
+; When you have trouble getting packages:
+;(package-refresh-contents)
+
+; This adds a lot of start up delay
+;(when (not package-archive-contents)
+;  (package-refresh-contents))
 
 ;; The packages you want installed. You can also install these
 ;; manually with M-x package-install
@@ -114,6 +118,10 @@
     ;; http://www.emacswiki.org/emacs/Smex
     smex
 
+    rg
+
+    rjsx-mode
+    
     projectile
 
     multi-web-mode
@@ -137,8 +145,6 @@
     
     god-mode
 
-    cheatsheet
-
     move-text
     
     auto-complete
@@ -157,8 +163,6 @@
     sublimity
 
     expand-region
-
-    smooth-scrolling
 
     js2-mode
 
@@ -187,13 +191,6 @@
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
-(require 'sky-color-clock)
-(sky-color-clock-initialize 40)
-(setq sky-color-clock-format " %d %-I:%M")
-
-(push '(:eval (sky-color-clock)) (default-value 'mode-line-format))
-(sky-color-clock-initialize-openweathermap-client "c69a71e8736257ff7f6823d04d437ca1" 5206379)
-(setq sky-color-clock-enable-emoji-icon t)
 
 ;; Customization qq
 
@@ -207,19 +204,19 @@
 (load "misc.el")
 
 (load "setup-fci.el")
-(load "setup-neotree.el")
+(load "setup-grep.el")
 (load "setup-moe.el")
 (load "setup-deft.el")
 (load "setup-daypage.el")
 (load "setup-org.el")
 (load "setup-guide-key.el")
+(load "cheatsheet-groups.el")
 (load "setup-auto-complete.el")
-;(load "setup-expand-region.el")
+(load "setup-expand-region.el")
 (load "setup-ace-jump-mode.el")
 (load "setup-god-mode.el")
-;(load "setup-sublimity.el")
+(load "setup-sublimity.el")
 (load "setup-javascript.el")
-(load "setup-clojure.el")
 (load "setup-go.el")
 
 (if (eq system-type 'darwin)
@@ -232,5 +229,12 @@
 
 (message "🔸🔸 dot-emacs git status 🔷🔷")
 (message (shell-command-to-string "git -C ~/.emacs.d/ status -s "))
+
+(message (format "Load time: %s" (emacs-init-time)))
+
+(with-eval-after-load 'rjsx-mode
+  (define-key rjsx-mode-map "<" nil)
+  (define-key rjsx-mode-map (kbd "C-d") nil)
+  (define-key rjsx-mode-map ">" nil))
 
 

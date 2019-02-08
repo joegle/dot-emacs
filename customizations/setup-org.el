@@ -27,6 +27,8 @@
 (setq org-export-with-sub-superscripts nil)
 (setq org-hide-leading-stars t)
 (setq org-startup-folded "nofold")
+(setq org-latex-packages-alist (quote (("" "chemfig" t))))
+(setq org-latex-create-formula-image-program (quote imagemagick))
 
 (org-add-link-type
  "yt"
@@ -41,3 +43,13 @@
      (latex (format "\href{%s}{%s}"
 		    path (or desc "video"))))))
 ; end youtube
+
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+(setq org-ellipsis " ⧽")
+
+;(setq org-bullets-face-name (quote org-bullet-face))
+
+(setq org-bullets-bullet-list '("◉" "✸" "●" "★"))
+

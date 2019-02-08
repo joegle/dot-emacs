@@ -3,6 +3,8 @@
 (require 'move-text)
 (move-text-default-bindings)
 
+(require 'writegood-mode)
+
 (require 'goto-last-change)
 
 (require 'fix-word)
@@ -18,8 +20,8 @@
  ("M-/" . delete-horizontal-space)
  ("C-c C-d" . er/expand-region)
  ("C-x C-\\" . goto-last-change)
-
+ ("M-x" . smex)
+ ("M-X" . smex-major-mode-commands)
  ("M-k" . move-text-up)
  ("M-j" . move-text-down))
 
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
