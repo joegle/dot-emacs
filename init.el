@@ -8,7 +8,6 @@
 
 ; https://www.gnu.org/software/emacs/manual/html_node/elisp/Idle-Timers.html
 ; https://stackoverflow.com/questions/2321904/elisp-how-to-save-data-in-a-file
-(setq doRepeat t)
 (random t)
 
 ; '(browse-url-browser-function (quote browse-url-chrome))
@@ -23,6 +22,16 @@
 (defgroup joegle nil
   "Namespace for my stuff"
   :group 'emacs)
+
+(defcustom joegle-enable-cs-timeout t
+  "Enable to random alert for cheatsheet review"
+  :type 'boolean
+  :group 'joegle)
+
+(defcustom joegle-cs-do-repeat t
+  "Enable for cheatsheet alert timeout to repeat"
+  :type 'boolean
+  :group 'joegle)
 
 (defcustom joegle-timeout-seconds 3
   "idle time limit to trigger prompt"
@@ -81,7 +90,8 @@
   (if (chance-n joegle-chance-factor)
       (ff)))
 
-(run-with-idle-timer joegle-timeout-seconds doRepeat 'maybe-ask-cheatsheet)
+(if joegle-enable-cs-timeout
+    (run-with-idle-timer joegle-timeout-seconds joegle-cs-do-repeat 'maybe-ask-cheatsheet))
 
 ;; Define package repositories
 (require 'package)
