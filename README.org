@@ -60,6 +60,10 @@
    + [ ] Org velocity or [[https://github.com/Fuco1/sallet][sallet]]
    + [ ] toggle comment on current line or region
    + [ ] Add [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html][per-directory]] examples for projects
+   + [ ] Make magit fullscreen with magit-display-buffer-function
+   + [ ] Add shortcut to log useful commands
+   + [ ] Setup [[https://www.emacswiki.org/emacs/BookmarkPlus][bookmark features]]
+   + [ ] Setup feature flags with custom variable group
 
 ** Next
    + [ ] [[https://www.emacswiki.org/emacs/UndoTree][undo tree]]

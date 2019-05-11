@@ -11,6 +11,12 @@
                       '(:key "M-x apropos" :description "apropos help search")
                       '(:key "M-x customize-group" :description "customize group"))
 
+(cheatsheet-add-group 'Magit
+                      '(:key "h" :description "Open magit help")
+                      '(:key "g" :description "Refresh magit buffer")
+                      '(:key "k" :description "Discard a modification to hunk")
+                      )
+
 (cheatsheet-add-group 'Help
                       '(:key "C-h a [topic]" :description "apropos")
                       '(:key "C-h c [key]" :description "describe key")
