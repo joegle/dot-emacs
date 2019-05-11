@@ -156,6 +156,8 @@
 
     dockerfile-mode
 
+    openwith
+    
     yaml-mode
 
     sublimity
@@ -216,6 +218,7 @@
 (load "setup-sublimity.el")
 (load "setup-javascript.el")
 (load "setup-go.el")
+(load "setup-bookmarks.el")
 
 (if (eq system-type 'darwin)
     (load "setup-mac.el"))
