@@ -25,3 +25,10 @@
  ("M-k" . move-text-up)
  ("M-j" . move-text-down))
 
+(global-set-key (kbd "C-x p") 'windmove-up)
+(global-set-key (kbd "C-x n") 'windmove-down)
+(global-set-key (kbd "C-x l") 'windmove-right)
+(global-set-key (kbd "C-x j") 'windmove-left)
+(global-set-key (kbd "C-x <right>") 'windmove-right)
+(global-set-key (kbd "C-x <left>") 'windmove-left)
+
