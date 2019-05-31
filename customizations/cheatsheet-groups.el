@@ -8,6 +8,7 @@
                       '(:key "C-x C-\\" :description "goto-last-change")
                       '(:key "C-c C-g" :description "grep-at-cursor")
                       '(:key "C-c d a" :description "dash-at-point")
+                      '(:key "C-M-q" :description "indent region with indent-pp-sexp")
                       '(:key "M-x apropos" :description "apropos help search")
                       '(:key "M-x customize-group" :description "customize group"))
 
@@ -29,6 +30,11 @@
                       '(:key "C-h r" :description "start emacs info manual")
                       '(:key "C-h w" :description "show key binding for function 'where-is'")
                       '(:key "C-h I" :description "Character inputs")
+                      )
+
+(cheatsheet-add-group 'Debugging
+                      '(:key "pdb" :description "Python debug mode")
+                      '(:key "C-x C-a C-b" :description "Set breakpoint with gud-break")
                       )
 
 (cheatsheet-add-group 'A
@@ -57,6 +63,8 @@
 (cheatsheet-add-group 'Windows
                       '(:key "C-x ^" :description "window taller")
                       '(:key "C-x {}" :description "window width")
+                      '(:key "C-x 5 b" :description "switch to frame")
+                      '(:key "C-x 5 2" :description "Set a frame")
                       '(:key "C-x C-v" :description "replace buffer"))
 
 (cheatsheet-add-group 'Moving
