@@ -18,7 +18,7 @@
  ("C-c C-s" . cheatsheet-show))
 
 (setq-default initial-scratch-message
-	      (concat ";; Happy hacking, " user-login-name "\n\n"))
+	      (concat ";; We do not rise to the level of our hopes. We fall to the level of our training.\n\n"))
 
 (require 'dash-at-point)
 (global-set-key (kbd "C-c d a") 'dash-at-point)

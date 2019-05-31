@@ -1,3 +1,4 @@
+; -------------------------------------------
 ; ███████╗███╗   ███╗ █████╗  ██████╗███████╗
 ; ██╔════╝████╗ ████║██╔══██╗██╔════╝██╔════╝
 ; █████╗  ██╔████╔██║███████║██║     ███████╗
@@ -95,11 +96,12 @@
 
 ;; Define package repositories
 (require 'package)
-(package-initialize)
 
 (setq package-archives '(("melpa" . "http://melpa.org/packages/")
 			 ("melpa-stable" . "http://stable.melpa.org/packages/")
 			 ("org" . "http://orgmode.org/elpa/")))
+
+(package-initialize)
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
@@ -214,6 +216,7 @@
 (load "editing.el")
 
 (load "misc.el")
+(load "uncommitted-dmz-todo-changes-DO-NOT-SAVE" 'ignore-if-missing)
 
 (load "setup-fci.el")
 (load "setup-grep.el")
