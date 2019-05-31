@@ -148,7 +148,7 @@
 (define-derived-mode cheatsheet-mode fundamental-mode "Cheat Sheet"
   "Set major mode for viewing cheat sheets.")
 
-(define-key cheatsheet-mode-map (kbd "C-q") 'kill-buffer-and-window)
+(define-key cheatsheet-mode-map (kbd "q") 'kill-buffer-and-window)
 
 (provide 'cheatsheet)
 ;;; cheatsheet.el ends here

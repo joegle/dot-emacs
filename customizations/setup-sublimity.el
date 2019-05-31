@@ -3,7 +3,16 @@
 ;; (require 'sublimity-map)
 ;; (require 'sublimity-attractive)
 
-(sublimity-mode 1)
+
+(defcustom joegle-enable-sublimity 3
+  "idle time limit to trigger prompt"
+  :type 'boolean
+  :group 'joegle)
+
+
+(if joegle-enable-sublimity
+    (sublimity-mode 1))
+
 (push 'self-insert-command sublimity-ignored-scroll-commands)
 
 ;(setq sublimity-scroll-weight 50

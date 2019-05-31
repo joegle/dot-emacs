@@ -81,8 +81,8 @@
 (defun ff ()
   "Prompt user to enter a file name, with completion and history support."
   (interactive)
-  
-  (if (y-or-n-p "Would you like to review cheatsheet?")
+
+  (if (y-or-n-p-with-timeout "Would you like to review cheatsheet?" 3 nil)
       (cheatsheet-show)))
 
 
@@ -182,6 +182,8 @@
 
     use-package
 
+    ein
+
     go-mode))
 
 (dolist (p my-packages)
@@ -229,6 +231,7 @@
 (load "setup-javascript.el")
 (load "setup-go.el")
 (load "setup-bookmarks.el")
+(load "setup-python.el")
 
 (if (eq system-type 'darwin)
     (load "setup-mac.el"))
