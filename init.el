@@ -172,6 +172,8 @@
     
     yaml-mode
 
+    ob-ipython
+
     sublimity
 
     expand-region

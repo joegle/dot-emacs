@@ -1,3 +1,5 @@
+(require 'cheatsheet)
+
 (global-set-key (kbd "C-c C-s") 'cheatsheet-show)
 
 ; M-x cheatsheet-show
