@@ -170,6 +170,8 @@
 
     use-package
 
+    ein
+
     go-mode))
 
 (dolist (p my-packages)
@@ -216,6 +218,7 @@
 (load "setup-sublimity.el")
 (load "setup-javascript.el")
 (load "setup-go.el")
+(load "setup-python.el")
 
 (if (eq system-type 'darwin)
     (load "setup-mac.el"))
