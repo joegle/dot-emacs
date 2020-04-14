@@ -43,7 +43,7 @@
 * Todos
 ** Inbox
 
-   + [ ] Example org-mode files
+   + [ ] Example org-mode files - literate emacs guides
    + [ ] Review Emacs.txt
    + [ ] Spell check
    + [ ] Snippets
@@ -60,6 +60,10 @@
    + [ ] Org velocity or [[https://github.com/Fuco1/sallet][sallet]]
    + [ ] toggle comment on current line or region
    + [ ] Add [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html][per-directory]] examples for projects
+   + [ ] Make magit fullscreen with magit-display-buffer-function
+   + [ ] Add shortcut to log useful commands
+   + [ ] Setup [[https://www.emacswiki.org/emacs/BookmarkPlus][bookmark features]]
+   + [ ] Setup feature flags with custom variable group
 
 ** Next
    + [ ] [[https://www.emacswiki.org/emacs/UndoTree][undo tree]]
@@ -71,10 +75,12 @@
    + [ ] remap kill-whole-line
    + [ ] [[https://github.com/pheaver/breadcrumb][breadcrumbs]]
    + [ ] [[https://github.com/escherdragon/sunrise-commander][sunrise commander]]
-   + Windows
+   + Windows and tabs
      + [ ] ace-window
      + [ ] [[http://emacs.stackexchange.com/questions/14347/collapse-split-windows][split windows shortcuts]]
      + [ ] [[https://github.com/tlh/workgroups.el][workgroups]]
+     + [ ] tabbar
+     + [ ] Review [[https://www.reddit.com/r/emacs/comments/1osw07/does_emacs_have_tabs/]["Does emacs have tabs"]]
    + Python development environment
      + test running
      + python docs

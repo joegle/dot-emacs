@@ -12,3 +12,5 @@
 (define-key input-decode-map "\e[1;3C" [M-right])
 (define-key input-decode-map "\e[1;3D" [M-left])
 
+(add-to-list 'openwith-associations '("\\.pdf\\'" "open" (file)))
+

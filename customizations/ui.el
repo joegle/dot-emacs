@@ -29,7 +29,7 @@
 
 (require 'zen-mode)
 
-(global-hl-line-mode 1)
+;(global-hl-line-mode 1)
 
 (set-face-background 'vertical-border "gray")
 (set-face-foreground 'vertical-border (face-background 'vertical-border))

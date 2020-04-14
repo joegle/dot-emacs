@@ -1,7 +1,10 @@
 (require 'guide-key)
 
 (setq guide-key/guide-key-sequence
-      '("C-x r" "C-x"
+      '("C-x r"
+        "C-x"
+        "C-x 5"
+        "C-x r"
         (org-mode "C-c")
         (deft-mode "C-c")
         (projectile-mode "C-c p")
