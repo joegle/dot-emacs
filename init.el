@@ -239,6 +239,7 @@
 (load "setup-go.el")
 (load "setup-bookmarks.el")
 (load "setup-python.el")
+(load "setup-magit.el")
 
 (if (eq system-type 'darwin)
     (load "setup-mac.el"))
