@@ -41,3 +41,15 @@
           (run-with-idle-timer 0.1 nil
                                (lambda (fg) (set-face-foreground 'mode-line fg))
                                orig-fg))))
+
+;install xsel for this to work
+(defun yank-to-x-clipboard ()
+  (interactive)
+  (if (region-active-p)
+	  (progn
+		(shell-command-on-region (region-beginning) (region-end) "xsel -i -b")
+		(message "Yanked region to clipboard!")
+		(deactivate-mark))
+	(message "No region active; can't yank to clipboard!")))
+
+(global-set-key [f8] 'yank-to-x-clipboard)
