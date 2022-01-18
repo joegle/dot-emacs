@@ -76,3 +76,21 @@
 (setq org-confirm-babel-evaluate nil)
 
 
+(defun org-open-region ()
+  "Just `org-open-at-point'. If region is active open all links in region."
+  (interactive)
+  (if (use-region-p)
+      ; https://www.gnu.org/software/emacs/manual/html_node/eintr/save_002dexcursion.html
+      (save-excursion
+        (save-restriction
+          (narrow-to-region (region-beginning) (region-end))
+          (goto-char (point-min))
+          (while (progn
+                   (org-next-link)
+                   (org-open-at-point)
+                   ))))
+    (org-open-at-point)))
+
+
+(global-set-key [f9] 'org-open-region)
+
