@@ -12,6 +12,10 @@
 (global-set-key (kbd "M-l") #'fix-word-downcase)
 (global-set-key (kbd "M-c") #'fix-word-capitalize)
 
+
+(put 'downcase-region 'disabled nil)
+
+
 (require 'expand-region)
 
 (bind-keys*

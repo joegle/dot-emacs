@@ -4,6 +4,7 @@
 
 ;disable auto save
 (setq auto-save-default nil)
+(setq create-lockfiles nil)
 (setq auto-save-list-file-prefix nil)
 
 ;; Show line numbers

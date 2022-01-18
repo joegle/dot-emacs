@@ -149,10 +149,25 @@
    + Annoying prompt messages
      : unset PROMPT_COMMAND
 
+** Jupyter ein
+
+   + [[https://raw.githubusercontent.com/millejoh/emacs-ipython-notebook/master/README.rst][ein README.rst]] (main shortcuts)
+   + [[http://millejoh.github.io/emacs-ipython-notebook/][Emacs IPython Notebook 0.16.1 documentation]]
+
+
+** Themes
+
+   + [[https://emacs.stackexchange.com/questions/303/describe-face-character-not-under-unreachable-by-the-cursor][Describe-face character not under or unreachable by the cursor]] - StackOverflow
+     + Use list-faces-display to visualize all faces
+     + mode-line-format
+     + header-line-format
+     + (buffer-string)
+     + M-: (buffer-string)
+       : (setq enable-recursive-minibuffers t)
+
+
 * References
   + [[https://plus.google.com/communities/114815898697665598016][Emacs group on Google+]]
   + [[http://planet.emacsen.org/][Planet Emacsen]] - blog
   + [[https://www.reddit.com/r/emacs/][Reddit emacs]]
   + [[https://pinboard.in/t:emacs][Emacs tag]] on Pinboard.in 
-
-

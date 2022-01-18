@@ -13,7 +13,7 @@
 
 
 (bind-keys*
- ("C-c C-g" . grep-at-cursor)
+ ("C-c C-g" . rg)
  ("C-x g" . magit-status)
  ("C-c C-s" . cheatsheet-show))
 

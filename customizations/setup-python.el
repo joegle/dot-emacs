@@ -6,3 +6,4 @@
 
 
 
+(setq ein:completion-backend 'ein:use-ac-jedi-backend)

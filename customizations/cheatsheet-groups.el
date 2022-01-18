@@ -18,6 +18,7 @@
                       '(:key "h" :description "Open magit help")
                       '(:key "g" :description "Refresh magit buffer")
                       '(:key "k" :description "Discard a modification to hunk")
+                      '(:key "C-c ^ u" :description "smerge-keep-upper conflict")
                       )
 
 (cheatsheet-add-group 'Help
@@ -36,6 +37,8 @@
 
 (cheatsheet-add-group 'Debugging
                       '(:key "pdb" :description "Python debug mode")
+                      '(:key "realgud:pdb" :description "Start python debugger")
+                      '(:key "C-x C-a C-q" :description "Start ShortKey mode in file")
                       '(:key "C-x C-a C-b" :description "Set breakpoint with gud-break")
                       )
 
@@ -60,19 +63,24 @@
                       '(:key "C-x C-x" :description "exchange point and mark")
                       '(:key "C-SPC" :description "toggle activate mark")
                       '(:key "C-x RET C \\" :description "Choose char input")
+                      '(:key "C-c >" :description "python-shift-right")
                       )
 
 (cheatsheet-add-group 'Windows
                       '(:key "C-x ^" :description "window taller")
                       '(:key "C-x {}" :description "window width")
                       '(:key "C-x 5 b" :description "switch to frame")
+                      '(:key "C-x -" :description "Shrink window to number of lines")
                       '(:key "C-x 5 2" :description "Set a frame")
+                      '(:key "C-x 0" :description "Delete the window")
+                      '(:key "C-c left/right" :description "Winner mode recover window layout")
                       '(:key "C-x C-v" :description "replace buffer"))
 
 (cheatsheet-add-group 'Moving
                       '(:key "M-m" :description "goto first char of line")
                       '(:key "C-x C-f" :description "find file")
                       '(:key "C-u C-SPC" :description "goto mark")
+                      '(:key "C-M a/e" :description "Move to function begin/end")
                       )
 
 
