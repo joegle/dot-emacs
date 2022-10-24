@@ -6,6 +6,7 @@
 (cheatsheet-add-group 'Learn
                       '(:key "C-c on" :description "Open daypage")
                       '(:key "C-c ol" :description "Log item to daypage")
+                      '(:key "C-c SPC" :description "ACE jump to head char")
                       '(:key "C-c 5" :description "start 5 minute log prompt")
                       '(:key "C-x C-\\" :description "goto-last-change")
                       '(:key "C-c C-g" :description "grep-at-cursor")
@@ -34,6 +35,13 @@
                       '(:key "C-h w" :description "show key binding for function 'where-is'")
                       '(:key "C-h I" :description "Character inputs")
                       )
+
+(cheatsheet-add-group 'hide-show
+                      '(:key "hs-minor-mode" :description "hide-show mode")
+                      '(:key "C-c @ C-h" :description "Hide current block (hs-hide-block)")
+                      '(:key "C-c @ C-s" :description "Show current block")
+                      )
+
 
 (cheatsheet-add-group 'Debugging
                       '(:key "pdb" :description "Python debug mode")
@@ -80,6 +88,8 @@
                       '(:key "M-m" :description "goto first char of line")
                       '(:key "C-x C-f" :description "find file")
                       '(:key "C-u C-SPC" :description "goto mark")
+                      '(:key "C-x r SPC" :description "Set a named register point-to-register")
+                      '(:key "C-x r j" :description "Jump to register")
                       '(:key "C-M a/e" :description "Move to function begin/end")
                       )
 

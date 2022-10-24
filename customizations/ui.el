@@ -54,3 +54,11 @@
 	(message "No region active; can't yank to clipboard!")))
 
 (global-set-key [f8] 'yank-to-x-clipboard)
+
+
+(use-package perspective
+  :bind
+  ("C-x C-b" . persp-list-buffers)   ; or use a nicer switcher, see below
+  :config
+  (persp-mode))
+

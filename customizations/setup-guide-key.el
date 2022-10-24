@@ -3,6 +3,7 @@
 (setq guide-key/guide-key-sequence
       '("C-x r"
         "C-x"
+        "C-x x"
         "C-x 5"
         "C-x r"
         (org-mode "C-c")
